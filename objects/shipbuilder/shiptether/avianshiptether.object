@@ -36,7 +36,12 @@
   "frameCooldown" : 5,
   "autoCloseCooldown" : 3600,
 
-  "scripts" : [ "shiptether.lua" ],
-  "scriptDelta" : 20
-
+  "scripts" : [
+    "shiptether.lua",
+    "/scripts/basestorage/miab_basestore_reader.lua",
+    "/scripts/basestorage/miab_basestore_printer.lua",
+    "/scripts/basestorage/miab_basestore_blueprint.lua",
+    "/scripts/basestorage/miab_basestore_util.lua"
+  ],
+  "scriptDelta" : 5
 }

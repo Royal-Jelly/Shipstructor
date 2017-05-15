@@ -38,10 +38,10 @@
 
   "scripts" : [
     "shiptether.lua",
-    "/scripts/miab_basestore_blueprint.lua",
-    "/scripts/miab_basestore_priter.lua",
-    "/scripts/miab_basestore_reader.lua",
-    "/scripts/miab_basestore_util.lua"
+    "/scripts/basestorage/miab_basestore_reader.lua",
+    "/scripts/basestorage/miab_basestore_printer.lua",
+    "/scripts/basestorage/miab_basestore_blueprint.lua",
+    "/scripts/basestorage/miab_basestore_util.lua"
   ],
-  "scriptDelta" : 20
+  "scriptDelta" : 5
 }
