@@ -8,6 +8,8 @@
   "shortdescription" : "Glitch Ship T2",
   "race" : "glitch",
 
+  "health" : 1000,
+
   "apexDescription" : "This ship can store lots of cargo, miniknog aproves.",
   "avianDescription" : "TBA",
   "floranDescription" : "TBA",

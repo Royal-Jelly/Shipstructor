@@ -8,6 +8,8 @@
   "shortdescription" : "Human Ship T3",
   "race" : "human",
 
+  "health" : 1000,
+
   "apexDescription" : "This ship can store lots of cargo, miniknog aproves.",
   "avianDescription" : "TBA",
   "floranDescription" : "TBA",

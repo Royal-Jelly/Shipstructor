@@ -8,6 +8,8 @@
   "shortdescription" : "Floran Ship T0",
   "race" : "floran",
 
+  "health" : 1000,
+
   "apexDescription" : "This ship can store lots of cargo, miniknog aproves.",
   "avianDescription" : "TBA",
   "floranDescription" : "TBA",
