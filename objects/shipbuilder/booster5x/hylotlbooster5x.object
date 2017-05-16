@@ -1,0 +1,72 @@
+{
+  "objectName" : "hylotlbooster5x",
+  "rarity" : "Common",
+  "description" : "A Standard Thruster, for faster than light travels",
+  "shortdescription" : "Hylotl Standard FTL Booster",
+  "race" : "generic",
+  "price" : 100,
+  "printable" : false,
+
+  "apexDescription" : "A booster. These have been known to malfunction and explode.",
+  "avianDescription" : "A booster, the heart of a ship.",
+  "floranDescription" : "Ssscary fire.",
+  "glitchDescription" : "Analyse. Temperature too high to measure.",
+  "humanDescription" : "This thing eats through fuel.",
+  "hylotlDescription" : "Propulsion. Space. So Awsome~",
+  "novakidDescription" : "Where do i shovel the coal in ?",
+
+  "category" : "light",
+  "lightColor" : [59, 183, 255],
+  "pointLight" : true,
+  "flickerDistance" : 0.2,
+  "flickerStrength" : 0.05,
+  "flickerTiming" : 4,
+
+  "inventoryIcon" : "hylotlbooster5x_icon.png",
+
+  "animation" : "/animation/booster/booster5x.animation",
+  "animationParts" : {
+    "booster" : "/animation/booster/booster5x.png",
+    "base" : "hylotlbooster5x.png"
+  },
+  
+  "animationPosition" : [0, 0],
+
+  "orientations" : [
+    {
+      "image" : "hylotlbooster5x.png:base.1",
+      "animationPosition" : [32, 0],
+      "frames" : 1,
+      "animationCycle" : 1.0,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "left" ],
+      "flipImages" : true,
+      "direction" : "left"
+    },
+    {
+      "image" : "hylotlbooster5x.png:base.1",
+      "imagePosition" : [0, 0],
+      "frames" : 1,
+      "animationCycle" : 1.0,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "right" ],
+      "direction" : "right"
+    }
+  ],
+
+
+  "soundEffect" : "/sfx/objects/boosterflame.ogg",
+  "soundEffectRadius" : 25,
+
+  "scripts" : ["/objects/ship/boosters/boosterflame.lua"],
+  "scriptDelta" : 10,
+
+  "flyingBoosterStates" : {
+    "none" : "off",
+    "disembarking" : "off",
+    "warp" : "turnOn",
+    "arriving" : "turnOff"
+  }
+}
