@@ -30,12 +30,12 @@
     "base" : "apexbooster5x.png"
   },
   
-  "animationPosition" : [0, 0],
+  "animationPosition" : [-5, 0],
 
   "orientations" : [
     {
       "image" : "apexbooster5x.png:base.1",
-      "animationPosition" : [32, 0],
+      "animationPosition" : [33, 0],
       "frames" : 1,
       "animationCycle" : 1.0,
 
@@ -46,7 +46,7 @@
     },
     {
       "image" : "apexbooster5x.png:base.1",
-      "imagePosition" : [0, 0],
+      "imagePosition" : [-5, 0],
       "frames" : 1,
       "animationCycle" : 1.0,
 
