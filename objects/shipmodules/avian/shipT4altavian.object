@@ -20,6 +20,7 @@
   "orientations" : [
     {
       "imageLayers" : [ { "image" : "shipT4altavian.png:<color>" } ],
+      "renderLayer" : "BackgroundOverlay",
 
       "imagePosition" : [-120, -120],
       "frames" : 1,

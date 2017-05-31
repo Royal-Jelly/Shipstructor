@@ -22,7 +22,7 @@
   "orientations" : [
     {
       "imageLayers" : [ { "image" : "shipT2novakid.png:<color>" } ],
-      "renderLayer" : "Object-5",
+      "renderLayer" : "BackgroundOverlay",
 
       "imagePosition" : [-80, -24],
       "frames" : 1,

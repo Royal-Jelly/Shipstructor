@@ -22,7 +22,7 @@
   "orientations" : [
     {
       "imageLayers" : [ { "image" : "shipT0glitch.png:<color>" } ],
-      "renderLayer" : "Object-5",
+      "renderLayer" : "BackgroundOverlay",
 
       "imagePosition" : [-112, -16],
       "frames" : 1,

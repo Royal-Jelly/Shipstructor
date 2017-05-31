@@ -22,7 +22,7 @@
   "orientations" : [
     {
       "imageLayers" : [ { "image" : "shipT3human.png:<color>" } ],
-      "renderLayer" : "Object-5",
+      "renderLayer" : "BackgroundOverlay",
 
       "imagePosition" : [-96, -32],
       "frames" : 1,

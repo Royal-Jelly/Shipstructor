@@ -22,7 +22,7 @@
   "orientations" : [
     {
       "imageLayers" : [ { "image" : "shipT0hylotl.png:<color>" } ],
-      "renderLayer" : "Object-5",
+      "renderLayer" : "BackgroundOverlay",
 
       "imagePosition" : [-96, -16],
       "frames" : 1,

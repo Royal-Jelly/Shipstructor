@@ -22,7 +22,7 @@
   "orientations" : [
     {
       "imageLayers" : [ { "image" : "shipT3floran.png:<color>" } ],
-      "renderLayer" : "Object-5",
+      "renderLayer" : "BackgroundOverlay",
 
       "imagePosition" : [-104, -48],
       "frames" : 1,
