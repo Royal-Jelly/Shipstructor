@@ -2,11 +2,11 @@
   {
     "op": "replace",
     "path": "/description",
-    "value": "Condor Class Identification & License for a master Captian , S.A.I.L Is automatically configured to allow more Crew Members to be hired"
+    "value": "Protectorate Class Identification & License for a master Captian , This Unique licence permits the ownership of multiple star cruisers."
   },
   {
     "op": "replace",
     "path": "/shortdescription",
-    "value": "Condor License"
+    "value": "Protectrate Class License"
   }
 ]

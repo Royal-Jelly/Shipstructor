@@ -1,13 +1,24 @@
 [
   {
+    "op": "remove",
+    "path": "/interactData/items"
+  },
+  {
     "op": "add",
-    "path": "/interactData/items/-",
-    "value": {
-      "item": "illegalengineerslicense",
-      "exclusiveQuests": [
-        "engineerslicense",
-        "illegalengineerslicense"
-      ]
-    }
+    "path": "/interactData/items",
+    "value": [
+      {
+        "item": "fakelicense5",
+        "prerequisiteShipLevel": 3,
+        "exclusiveQuests": [ "shipupgrade5", "illegalshipupgrade5" ]
+      },
+      { "item": "apexT3shipcontroller" },
+      { "item": "avianT3shipcontroller" },
+      { "item": "floranT3shipcontroller" },
+      { "item": "glitchT3shipcontroller" },
+      { "item": "humanT3shipcontroller" },
+      { "item": "hylotlT3shipcontroller" },
+      { "item": "novakidT3shipcontroller" }
+    ]
   }
 ]

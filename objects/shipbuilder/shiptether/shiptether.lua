@@ -90,7 +90,7 @@ function update(dt)
 			self.miab.readingStage = SPITOUTPRINTER
 		elseif (self.miab.readingStage == SPITOUTPRINTER) then
 			if (self.miab.breakStuff) then destroyBlocks() end
-			-- spawnPrinterItem()
+			spawnShippodItem() -- Generates a Ship Pod that is broken atm
 			produceJSONOutput()
 			if (not self.miab.breakStuff) then object.smash() end
 			self.miab.readingStage = READSUCCESS
@@ -137,6 +137,11 @@ function update(dt)
 	end
 end
 
+function spawnShippodItem()
+	-- spawned shippod item is not exactly working in the ship printer atm unsure how to fix this
+	local _configTbl = blueprint.toConfigTable()
+	world.spawnItem("storedshipcontroller", self.miab.spawnPrinterPosition, self.miab.printerCount, _configTbl)
+end
 
 --- Function to check if the item is a valid pod
 -- @param itm The item to check

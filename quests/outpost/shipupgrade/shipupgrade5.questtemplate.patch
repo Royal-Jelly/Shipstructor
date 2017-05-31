@@ -1,0 +1,17 @@
+[
+  {
+    "op": "replace",
+    "path": "/title",
+    "value": "^green;Protectorate Ship Upgrade"
+  },
+  {
+    "op": "replace",
+    "path": "/completionText",
+    "value": "I'll have the penguins inspect yer ship fer repairs. Quite the story mate, I will also configure S.A.I.L for no extra. I thank ye and enjoy yer custom ship."
+  },
+  {
+    "op": "replace",
+    "path": "/scriptConfig/upgradeShip/shipLevel",
+    "value": 9
+  }
+]
