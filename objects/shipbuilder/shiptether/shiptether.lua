@@ -47,9 +47,9 @@ function checkController()
 	if not validatePod(podItem) then return end -- << Don't do anything with the 
 
 	local itemConf = root.itemConfig(podItem)
-	object.setConfigParameter("miab_breakStuff", itemConf["config"]["miab_breakStuff"])
-	object.setConfigParameter("miab_clearOnly", itemConf["config"]["miab_clearOnly"])
-	object.setConfigParameter("miab_dumpJSON", itemConf["config"]["miab_dumpJSON"])
+	object.setConfigParameter("miab_clearArea", itemConf["config"]["miab_clearArea"])
+	object.setConfigParameter("miab_dropContents", itemConf["config"]["miab_dropContents"])
+	object.setConfigParameter("miab_saveBlueprint", itemConf["config"]["miab_saveBlueprint"])
 	object.setConfigParameter("miab_printerCount", itemConf["config"]["miab_printerCount"])
 	object.setConfigParameter("miab_fixed_area_to_ignore_during_scan_bounding_box", itemConf["config"]["miab_fixed_area_to_ignore_during_scan_bounding_box"])
 	object.setConfigParameter("miab_fixed_area_to_scan_bounding_box", itemConf["config"]["miab_fixed_area_to_scan_bounding_box"])
@@ -61,9 +61,9 @@ function checkController()
 		local readerOptions = {}
 		readerOptions.readerPosition = object.toAbsolutePosition({ 0.0, 0.0 })
 		readerOptions.spawnPrinterPosition = object.toAbsolutePosition({ 0, 4 })
-		readerOptions.breakStuff = config.getParameter("miab_breakStuff", true)
-		readerOptions.clearOnly = config.getParameter("miab_clearOnly", false)
-		readerOptions.plotJSON = config.getParameter("miab_dumpJSON", false)
+		readerOptions.clearArea = config.getParameter("miab_clearArea", true)
+		readerOptions.dropContents = config.getParameter("miab_dropContents", false)
+		readerOptions.plotJSON = config.getParameter("miab_saveBlueprint", false)
 		readerOptions.printerCount = config.getParameter("miab_printerCount", 1)
 		readerOptions.areaToIgnore = config.getParameter("miab_fixed_area_to_ignore_during_scan_bounding_box", nil) -- [left, bottom, right, top]
 		readerOptions.animationDuration = 3
