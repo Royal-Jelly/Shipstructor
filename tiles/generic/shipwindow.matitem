@@ -1,7 +1,7 @@
 {
   "itemName" : "shipwindow",
   "rarity" : "Common",
-  "inventoryIcon" : "shipwindow.png",
+  "inventoryIcon" : "shipwindow_icon.png",
   "dropCollision" : [-2.5, -2.0, 2.5, 2.0],
   "shortdescription" : "Ship Window",
   "description" : "Framed glass suitable for a starship widnow.",

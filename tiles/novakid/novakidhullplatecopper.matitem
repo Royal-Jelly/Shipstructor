@@ -1,0 +1,14 @@
+{
+  "itemName" : "novakidhullplatecopper",
+  "price" : 0,
+  "category" : "block",
+  "rarity" : "Common",
+  "inventoryIcon" : "novakidhullplatecopper_icon.png",
+  "shortdescription" : "Novakid Hull Panel Copper",
+  "description" : "Cheap, resilient panelling widely used for ship and station construction.",
+  "glitchdescription" : "Observant. This is panelling widely used for ship and station construction.",
+  "florandescription" : "Shiny sssmooth space metal.",
+  "novakiddescription" : "Some thick metal plating, looks mighty solid.",
+
+  "materialId" : 31351
+}

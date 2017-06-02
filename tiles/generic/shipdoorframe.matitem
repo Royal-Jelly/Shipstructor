@@ -1,7 +1,7 @@
 {
   "itemName" : "shipdoorframe",
   "rarity" : "Common",
-  "inventoryIcon" : "shipdoorframe.png",
+  "inventoryIcon" : "shipdoorframe_icon.png",
   "dropCollision" : [-2.5, -2.0, 2.5, 2.0],
   "shortdescription" : "Ship Door Frame",
   "description" : "It's what you see when you look close at an open, high-tech doorway.",

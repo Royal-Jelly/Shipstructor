@@ -1,7 +1,7 @@
 {
   "itemName" : "shiphatchframe",
   "rarity" : "Common",
-  "inventoryIcon" : "shiphatchframe.png",
+  "inventoryIcon" : "shiphatchframe_icon.png",
   "dropCollision" : [-2.5, -2.0, 2.5, 2.0],
   "shortdescription" : "Ship Hatch Frame",
   "description" : "It's what you see when you look close at an open, high-tech hatch.",

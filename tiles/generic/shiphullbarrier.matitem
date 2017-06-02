@@ -1,7 +1,7 @@
 {
   "itemName" : "shiphullbarrier",
   "rarity" : "Common",
-  "inventoryIcon" : "shiphullbarrier.png",
+  "inventoryIcon" : "shiphullbarrier_icon.png",
   "dropCollision" : [-2.5, -2.0, 2.5, 2.0],
   "shortdescription" : "Spaceship Hull Barrier",
   "description" : "Someone's been creative, are you making a ship perhaps?.",

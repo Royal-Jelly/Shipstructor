@@ -1,0 +1,56 @@
+SHISTRUCTOR TOTAL RESERVED TILE ID RANGE 31000-31500
+
+GENERIC TILE ID RANGE = 31000-31049
+USED ID'S :
+31000 = shiphullbarrier (Admin mode only)
+31001 = shipwindow
+31002 = shipdoorframe
+31002 = shiphatchframe
+
+
+APEX TILE ID RANGE = 31050-31099
+USED ID'S :
+31050 = apexhullplate
+
+
+AVIAN TILE ID RANGE = 31100-31149
+USED ID'S :
+31100 = avianhullplate
+
+
+FLORAN TILE ID RANGE = 31150-31199
+USED ID'S :
+floranhullplatebrown = 31150
+floranhullplatecyan = 31151
+
+
+GLITCH TILE ID RANGE = 31200-31249
+USED ID'S :
+31200 = glitchhullplatebrown
+31201 = glitchhullplatecopper
+
+
+HUMAN TILE ID RANGE = 31250-31299
+USED ID'S :
+31250 = humanhullplatered
+
+
+HYLOTL TILE ID RANGE = 31300-31349
+USED ID'S :
+31300 = hylotlhullplateclassic
+31301 = hylotlhullplatedepths
+31302 = hylotlhullplatekabuki
+31303 = hylotlhullplatesaphire
+31304 = hylotlhulldeco
+
+
+NOVAKID TILE ID RANGE = 31350-31399
+USED ID'S :
+31350 = novakidhullplatebrass
+31351 = novakidhullplatecopper
+31352 = novakidhullplatecream
+31353 = novakidhullplatecyan
+
+
+ADDON MOD TILE ID RANGE = 31400-3500
+USED ID'S : NONE TBA
