@@ -86,6 +86,7 @@ function update(dt)
 	if (self.miab.readingStage) then -- only accessed during read
 		if (self.miab.readingStage == READBUILDING) then
 			scanBuilding()
+			playCinematic() -- Spawn invisiblenpc so we can trigger a cinematic
 			if (self.miab.breakStuff) then destroyBlocks() end
 			self.miab.readingStage = SPITOUTPRINTER
 		elseif (self.miab.readingStage == SPITOUTPRINTER) then
@@ -137,8 +138,17 @@ function update(dt)
 	end
 end
 
+-- Look for a item param "cinematicPlaytime" and spawn a npc with the same name as that value
+-- EX if "cinematicPlaytime" = 5 then spawn a npc cinematicPlaytime5
+-- Fake a player interaction with the npc to trigger a cutscene of the same name
+-- the npc should then die after a few seconds to make sure we dont spwn too many of them (might cause lag)
+function playCinematic()
+
+end
+
+-- this spawns a invalid shippos atm because i'm missing related to the _configTbl thing from Modules in a box
+-- I Am not exacly sure why this doesn't work but i'm sure im just being dumb
 function spawnShippodItem()
-	-- spawned shippod item is not exactly working in the ship printer atm unsure how to fix this
 	local _configTbl = blueprint.toConfigTable()
 	world.spawnItem("storedshipcontroller", self.miab.spawnPrinterPosition, self.miab.printerCount, _configTbl)
 end
