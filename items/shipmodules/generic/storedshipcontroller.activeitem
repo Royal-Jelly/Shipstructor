@@ -1,0 +1,19 @@
+{
+  "itemName" : "storedshipcontroller",
+  "price" : 25000,
+  "rarity" : "Rare",
+  "category" : "ShipController",
+  "description" : "An custom ship which has been stored in a Nanite controller, can only be used with the ship tether.",
+  "shortdescription" : "Stored Ship Controller",
+  "twoHanded" : true,
+  "maxStack" : 1,
+  "itemTags" : ["shipcontroller"],
+
+  "inventoryIcon" : "storedshipcontroller.png",
+
+  // MIAB SETTINGS ARE GENERATED BELOW
+	"miab_breakStuff" : true,
+	"miab_dumpJSON" : false, 
+	"miab_fixed_area_to_scan_bounding_box" : [1000, 1000, 1100, 1100],
+	"miab_fixed_area_to_ignore_during_scan_bounding_box" : [1020, 1024, 1027, 1033]
+}
