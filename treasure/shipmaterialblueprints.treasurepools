@@ -21,9 +21,9 @@
   "genericshipmaterialblueprints" : [
     [1, {
       "pool" : [
-// Vanilla Objects
+// Vanilla 
 
-// Shipstructor Objects
+// Shipstructor 
 
       ],
       "poolRounds" : [
@@ -36,16 +36,16 @@
   "apexshipmaterialblueprints" : [
     [1, {
       "pool" : [
-// Vanilla Objects
+// Vanilla 
         {"weight" : 1.0, "item" : ["apexcaptainschair-recipe", 1]},
         {"weight" : 1.0, "item" : ["apexshiplocker-recipe", 1]},
         {"weight" : 1.0, "item" : ["apexstoragelocker-recipe", 1]},
         {"weight" : 1.0, "item" : ["apexfuelhatch-recipe", 1]},
         //{"weight" : 1.0, "item" : ["teleporter-recipe", 1]},
         {"weight" : 1.0, "item" : ["apexshipdoor-recipe", 1]},
-        {"weight" : 1.0, "item" : ["apexshiphatch-recipe", 1]}
-// Shipstructor Objects
-
+        {"weight" : 1.0, "item" : ["apexshiphatch-recipe", 1]},
+// Shipstructor 
+        {"weight" : 1.0, "item" : ["apexhullplate-recipe", 1]}
       ],
       "poolRounds" : [
         [0.95, 1],
@@ -64,9 +64,9 @@
         {"weight" : 1.0, "item" : ["avianfuelhatch-recipe", 1]},
         //{"weight" : 1.0, "item" : ["avianteleporter-recipe", 1]},
         {"weight" : 1.0, "item" : ["avianshipdoor-recipe", 1]},
-        {"weight" : 1.0, "item" : ["avianshiphatch-recipe", 1]}
-// Shipstructor Objects
-
+        {"weight" : 1.0, "item" : ["avianshiphatch-recipe", 1]},
+// Shipstructor 
+        {"weight" : 1.0, "item" : ["avianhullplate-recipe", 1]}
       ],
       "poolRounds" : [
         [0.95, 1],
@@ -85,9 +85,10 @@
         {"weight" : 1.0, "item" : ["floranfuelhatch-recipe", 1]},
         //{"weight" : 1.0, "item" : ["floranteleporter-recipe", 1]},
         {"weight" : 1.0, "item" : ["floranshipdoor-recipe", 1]},
-        {"weight" : 1.0, "item" : ["floranshiphatch-recipe", 1]}
-// Shipstructor Objects
-
+        {"weight" : 1.0, "item" : ["floranshiphatch-recipe", 1]},
+// Shipstructor 
+        {"weight" : 1.0, "item" : ["floranhullplatebrown-recipe", 1]},
+        {"weight" : 1.0, "item" : ["floranhullplatecyan-recipe", 1]}
       ],
       "poolRounds" : [
         [0.95, 1],
@@ -106,9 +107,10 @@
         {"weight" : 1.0, "item" : ["glitchfuelhatch-recipe", 1]},
         //{"weight" : 1.0, "item" : ["glitchteleporter-recipe", 1]},
         {"weight" : 1.0, "item" : ["glitchshipdoor-recipe", 1]},
-        {"weight" : 1.0, "item" : ["glitchshiphatch-recipe", 1]}
-// Shipstructor Objects
-
+        {"weight" : 1.0, "item" : ["glitchshiphatch-recipe", 1]},
+// Shipstructor 
+        {"weight" : 1.0, "item" : ["glitchhullplatebrown-recipe", 1]},
+        {"weight" : 1.0, "item" : ["glitchhullplatecopper-recipe", 1]}
       ],
       "poolRounds" : [
         [0.95, 1],
@@ -127,9 +129,9 @@
         {"weight" : 1.0, "item" : ["humanfuelhatch-recipe", 1]},
         //{"weight" : 1.0, "item" : ["humanteleporter-recipe", 1]},
         {"weight" : 1.0, "item" : ["humanshipdoor-recipe", 1]},
-        {"weight" : 1.0, "item" : ["humanshiphatch-recipe", 1]}
-// Shipstructor Objects
-
+        {"weight" : 1.0, "item" : ["humanshiphatch-recipe", 1]},
+// Shipstructor 
+        {"weight" : 1.0, "item" : ["humanhullplatered-recipe", 1]}
       ],
       "poolRounds" : [
         [0.95, 1],
@@ -148,9 +150,13 @@
         {"weight" : 1.0, "item" : ["hylotlfuelhatch-recipe", 1]},
         //{"weight" : 1.0, "item" : ["hylotlteleporter-recipe", 1]},
         {"weight" : 1.0, "item" : ["hylotlshipdoor-recipe", 1]},
-        {"weight" : 1.0, "item" : ["hylotlshiphatch-recipe", 1]}
-// Shipstructor Objects
-
+        {"weight" : 1.0, "item" : ["hylotlshiphatch-recipe", 1]},
+// Shipstructor 
+        {"weight" : 1.0, "item" : ["hylotlhulldeco-recipe", 1]},
+        {"weight" : 1.0, "item" : ["hylotlhullplateclassic-recipe", 1]},
+        {"weight" : 1.0, "item" : ["hylotlhullplatedepths-recipe", 1]},
+        {"weight" : 1.0, "item" : ["hylotlhullplatekabuki-recipe", 1]},
+        {"weight" : 1.0, "item" : ["hylotlhullplatesaphire-recipe", 1]}
       ],
       "poolRounds" : [
         [0.95, 1],
@@ -169,9 +175,12 @@
         {"weight" : 1.0, "item" : ["novakidfuelhatch-recipe", 1]},
         //{"weight" : 1.0, "item" : ["novakidteleporter-recipe", 1]},
         {"weight" : 1.0, "item" : ["novakidshipdoor-recipe", 1]},
-        {"weight" : 1.0, "item" : ["novakidshiphatch-recipe", 1]}
-// Shipstructor Objects
-
+        {"weight" : 1.0, "item" : ["novakidshiphatch-recipe", 1]},
+// Shipstructor 
+        {"weight" : 1.0, "item" : ["novakidhullplatebrass-recipe", 1]},
+        {"weight" : 1.0, "item" : ["novakidhullplatecopper-recipe", 1]},
+        {"weight" : 1.0, "item" : ["novakidhullplatecream-recipe", 1]},
+        {"weight" : 1.0, "item" : ["novakidhullplatecyan-recipe", 1]}
       ],
       "poolRounds" : [
         [0.95, 1],
