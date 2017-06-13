@@ -81,7 +81,7 @@ end
 -- @param dt delta time, time is specified in *.object as scriptDelta (60 = 1 second)
 function update(dt)
 	-- this needs to be polled until done
-	if (self.miab == nil) then return end -- not initialized
+	if (self.miab == nil) and (is_shipworld() == "false")  then return end -- not initialized and not on planet
 	
 	if (self.miab.readingStage) then -- only accessed during read
 		if (self.miab.readingStage == READBUILDING) then

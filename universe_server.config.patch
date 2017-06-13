@@ -33,5 +33,10 @@
     "op" : "add",
     "path" : "/speciesShips/hylotl/-",
     "value" : "/ships/hylotl/hylotlT9.structure"
+  },
+  {
+    "op" : "add",
+    "path" : "/speciesShips/hylotl/-",
+    "value" : "/ships/hylotl/novakidT9.structure"
   }
 ]
