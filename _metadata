@@ -7,5 +7,5 @@
   "name" : "shipstructor",
   "requires" : ["modules-in-a-box"],
   "steamContentId" : "",
-  "version" : "1.2.2"
+  "version" : "1.2.4"
 }
