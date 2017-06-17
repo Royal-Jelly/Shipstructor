@@ -25,7 +25,7 @@
 	{
 	  "dualImage" : "hylotlshiptether.png:<color>.<key>",
 	  "imagePosition" : [-13, 0],
-	  "renderLayer" : "Object-5"
+	  "renderLayer" : "Object+5"
 	}
   ],
 

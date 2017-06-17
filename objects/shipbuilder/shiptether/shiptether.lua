@@ -57,22 +57,14 @@ function checkController()
 	object.setConfigParameter("miab_printer_offset", itemConf["config"]["miab_printer_offset"])
 
 	if (not readerBusy()) then
-		-- Options for read process
+		-- Set options for read process
 		local readerOptions = {}
+		readerOptions = config.getParameter("miabScannerOptions", nil)
 		readerOptions.readerPosition = object.toAbsolutePosition({ 0.0, 0.0 })
 		readerOptions.spawnPrinterPosition = object.toAbsolutePosition({ 0, 4 })
-		readerOptions.breakStuff = config.getParameter("miab_breakStuff", true)
-		readerOptions.clearOnly = config.getParameter("miab_clearOnly", false)
-		readerOptions.plotJSON = config.getParameter("miab_dumpJSON", false)
-		readerOptions.printerCount = config.getParameter("miab_printerCount", 1)
-		readerOptions.areaToIgnore = config.getParameter("miab_fixed_area_to_ignore_during_scan_bounding_box", nil) -- [left, bottom, right, top]
-		readerOptions.animationDuration = 3
-		readerOptions.areaToScan = config.getParameter("miab_fixed_area_to_scan_bounding_box", nil) -- [left, bottom, right, top]
 		
-		if (readerOptions.areaToScan ~= nil) then
-			-- start reading process
-			readStart(readerOptions)
-		end
+		-- start reading process
+		readStart(readerOptions)
 	end
 end
 
@@ -81,12 +73,11 @@ end
 -- @param dt delta time, time is specified in *.object as scriptDelta (60 = 1 second)
 function update(dt)
 	-- this needs to be polled until done
-	if (self.miab == nil) and (is_shipworld() == "false")  then return end -- not initialized and not on planet
+	if (self.miab == nil) then return end -- not initialized
 	
 	if (self.miab.readingStage) then -- only accessed during read
 		if (self.miab.readingStage == READBUILDING) then
 			scanBuilding()
-			playCinematic() -- Spawn invisiblenpc so we can trigger a cinematic
 			if (self.miab.breakStuff) then destroyBlocks() end
 			self.miab.readingStage = SPITOUTPRINTER
 		elseif (self.miab.readingStage == SPITOUTPRINTER) then
@@ -102,35 +93,18 @@ function update(dt)
 			
 			-- Start to configure writing process
 			local writerOptions = {}
-			local area_to_scan_bounding_box = config.getParameter("miab_fixed_area_to_scan_bounding_box", nil)
+			local area_to_scan_bounding_box = config.getParameter("miabScannerOptions.areaToScan", nil)
 			writerOptions.writerPosition = ({area_to_scan_bounding_box[1],area_to_scan_bounding_box[2]})
+			writerOptions.spawnUnplacablesPosition = object.toAbsolutePosition({ 0, 4 })
 			printInit(writerOptions)
-			donePrinting = false -- flag to end polling	
+			donePrinting = false -- flag to end polling
 		end
 	end
-	
+
 	if (self.miab.buildingStage) then -- only accessed during write
 		if (not donePrinting) then
 			-- needs to be polled
-			if (self.miab.buildingStage == PRINTINITIALISE) then -- read the Blueprint to be built
-				readBlueprint()
-			elseif (self.miab.buildingStage == PREVIEWBUILDAREA) then -- display the build area indicator
-				self.miab.buildingStage = PLACEBLOCKS
-			elseif (self.miab.buildingStage == PLACEBLOCKS) then -- place scaffolding + blocks
-				printBlocks()
-			elseif (self.miab.buildingStage == PLACETILEMODS) then -- place mods on tiles
-				printTileMods()
-			elseif (self.miab.buildingStage == REMOVESCAFFOLD) then -- remove scaffolding
-				clearScaffolding()
-			elseif (self.miab.buildingStage == PLACEOBJECTS) then -- place objects
-				printObjects()
-			elseif (self.miab.buildingStage == PRINTOBSTRUCTED) then -- area was obstructed
-				FloatObstructed()
-			elseif (self.miab.buildingStage == PRINTUNANCHORED) then -- area was in a void, no blocks could be placed
-				FloatUnanchored()
-			elseif (self.miab.buildingStage == PRINTSUCCESS) then
-				donePrinting = true
-			end
+			donePrinting = printModule_modified_copy_from_miab_basestore_printer()
 		else
 			self.miab = nil
 			--object.smash()
@@ -138,15 +112,54 @@ function update(dt)
 	end
 end
 
--- Look for a item param "cinematicPlaytime" and spawn a npc with the same name as that value
--- EX if "cinematicPlaytime" = 5 then spawn a npc cinematicPlaytime5
--- Fake a player interaction with the npc to trigger a cutscene of the same name
--- the npc should then die after a few seconds to make sure we dont spwn too many of them (might cause lag)
-function playCinematic()
-
+function setScannerStatus(status, sound, colour)
 end
 
--- this spawns a invalid shippos atm because i'm missing related to the _configTbl thing from Modules in a box
+function printModule_modified_copy_from_miab_basestore_printer()
+	if (self.miab == nil) then return false end -- not initialized
+
+	if (self.miab.buildingStage == PRINTINITIALISE) then -- read the Blueprint to be built
+		--sb.logInfo("3.1 - PRINTINITIALISE")
+		readBlueprint()
+	elseif (self.miab.buildingStage == PREVIEWBUILDAREA) then -- display the build area indicator
+		--sb.logInfo("3.2 - PREVIEWBUILDAREA")
+		self.miab.buildingStage = PLACEBLOCKS
+	elseif (self.miab.buildingStage == CLEARBUILDAREA) then -- clear build area
+		--sb.logInfo("3.3 - CLEARBUILDAREA")
+		-- should never happen
+	elseif (self.miab.buildingStage == DOUBLETAPBLOCKS) then -- clear build area
+		--sb.logInfo("3.4 - DOUBLETAPBLOCKS")
+		-- should never happen
+	elseif (self.miab.buildingStage == PLACEBLOCKS) then -- place scaffolding + blocks
+		--sb.logInfo("3.5 - PLACEBLOCKS")
+		printBlocks()
+	elseif (self.miab.buildingStage == PLACETILEMODS) then -- place mods on tiles
+		--sb.logInfo("3.6 - PLACETILEMODS")
+		printTileMods()
+	elseif (self.miab.buildingStage == REMOVESCAFFOLD) then -- remove scaffolding
+		--sb.logInfo("3.7 - REMOVESCAFFOLD")
+		clearScaffolding()
+	elseif (self.miab.buildingStage == PLACEOBJECTS) then -- place objects
+		--sb.logInfo("3.8 - PLACEOBJECTS")
+		printObjects()
+	elseif (self.miab.buildingStage == PLACELIQUIDS) then -- place liquids
+		--sb.logInfo("3.9 - PLACELIQUIDS")
+		printLiquids()
+ 	elseif (self.miab.buildingStage == PRINTOBSTRUCTED) then -- area was obstructed
+		--sb.logInfo("3.10 - PRINTOBSTRUCTED")
+		FloatObstructed()
+	elseif (self.miab.buildingStage == PRINTUNANCHORED) then -- area was in a void, no blocks could be placed
+		--sb.logInfo("3.11 - PRINTUNANCHORED")
+		FloatUnanchored()
+	elseif (self.miab.buildingStage == PRINTSUCCESS) then
+		--sb.logInfo("3.12 - PRINTSUCCESS")
+		return true
+	end
+
+	return false
+end
+
+-- this spawns a invalid shippods atm because i'm missing related to the _configTbl thing from Modules in a box
 -- I Am not exacly sure why this doesn't work but i'm sure im just being dumb
 function spawnShippodItem()
 	local _configTbl = blueprint.toConfigTable()

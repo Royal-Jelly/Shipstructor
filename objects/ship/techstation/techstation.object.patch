@@ -9,6 +9,10 @@
     "path": "/scripts"
   },
   {
+    "op": "add",
+    "path": "/scripts"
+  },
+  {
     "op": "remove",
     "path": "/scriptDelta"
   },
