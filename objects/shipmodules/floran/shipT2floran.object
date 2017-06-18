@@ -21,10 +21,10 @@
   "inventoryIcon" : "shipT0floranicon.png",
   "orientations" : [
     {
-      "imageLayers" : [ { "image" : "shipT2floran.png:<color>" } ],
+      "imageLayers" : [ { "image" : "/ships/floran/floranT2.png:<color>" } ],
       "renderLayer" : "BackgroundOverlay",
 
-      "imagePosition" : [-104, -48],
+      "imagePosition" : [-432, -112],
       "frames" : 1,
       "animationCycle" : 1.0
 	}

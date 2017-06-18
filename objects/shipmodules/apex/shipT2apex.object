@@ -21,10 +21,10 @@
   "inventoryIcon" : "shipT0apexicon.png",
   "orientations" : [
     {
-      "imageLayers" : [ { "image" : "shipT2apex.png:<color>" } ],
+      "imageLayers" : [ { "image" : "/ships/apex/apexT2.png:<color>" } ],
       "renderLayer" : "BackgroundOverlay",
 
-      "imagePosition" : [-104, -16],
+      "imagePosition" : [-424, -80],
       "frames" : 1,
       "animationCycle" : 1.0
 	}

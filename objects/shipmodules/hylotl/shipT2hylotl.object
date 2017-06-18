@@ -21,10 +21,10 @@
   "inventoryIcon" : "shipT0hylotlicon.png",
   "orientations" : [
     {
-      "imageLayers" : [ { "image" : "shipT2hylotl.png:<color>" } ],
+      "imageLayers" : [ { "image" : "/ships/hylotl/hylotlT2.png:<color>" } ],
       "renderLayer" : "BackgroundOverlay",
 
-      "imagePosition" : [-96, -16],
+      "imagePosition" : [-434, -88],
       "frames" : 1,
       "animationCycle" : 1.0
 	}

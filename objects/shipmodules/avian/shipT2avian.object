@@ -21,10 +21,10 @@
   "inventoryIcon" : "shipT0avianicon.png",
   "orientations" : [
     {
-      "imageLayers" : [ { "image" : "shipT2avian.png:<color>" } ],
+      "imageLayers" : [ { "image" : "/ships/avian/avianT2.png:<color>" } ],
       "renderLayer" : "BackgroundOverlay",
 
-      "imagePosition" : [-120, -16],
+      "imagePosition" : [-440, -88],
       "frames" : 1,
       "animationCycle" : 1.0
 	}

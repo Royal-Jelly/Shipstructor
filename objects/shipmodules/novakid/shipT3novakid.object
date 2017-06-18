@@ -21,10 +21,10 @@
   "inventoryIcon" : "shipT0novakidicon.png",
   "orientations" : [
     {
-      "imageLayers" : [ { "image" : "shipT3novakid.png:<color>" } ],
+      "imageLayers" : [ { "image" : "/ships/novakid/novakidT3.png:<color>" } ],
       "renderLayer" : "BackgroundOverlay",
 
-      "imagePosition" : [-80, -24],
+      "imagePosition" : [-692, -106],
       "frames" : 1,
       "animationCycle" : 1.0
 	}

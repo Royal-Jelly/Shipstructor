@@ -21,10 +21,10 @@
   "inventoryIcon" : "shipT0humanicon.png",
   "orientations" : [
     {
-      "imageLayers" : [ { "image" : "shipT2human.png:<color>" } ],
+      "imageLayers" : [ { "image" : "/ships/human/humanT2.png:<color>" } ],
       "renderLayer" : "BackgroundOverlay",
 
-      "imagePosition" : [-96, -32],
+      "imagePosition" : [-432, -96],
       "frames" : 1,
       "animationCycle" : 1.0
 	}

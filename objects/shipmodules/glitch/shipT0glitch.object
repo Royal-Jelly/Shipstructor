@@ -21,10 +21,10 @@
   "inventoryIcon" : "shipT0glitchicon.png",
   "orientations" : [
     {
-      "imageLayers" : [ { "image" : "shipT0glitch.png:<color>" } ],
+      "imageLayers" : [ { "image" : "/ships/glitch/glitchT1.png:<color>" } ],
       "renderLayer" : "BackgroundOverlay",
 
-      "imagePosition" : [-112, -16],
+      "imagePosition" : [-432, -81],
       "frames" : 1,
       "animationCycle" : 1.0
 	}
