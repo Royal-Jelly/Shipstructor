@@ -279,6 +279,10 @@ function checkController()
 	object.setConfigParameter("miab_fixed_area_to_ignore_during_scan_bounding_box", itemConf["config"]["miab_fixed_area_to_ignore_during_scan_bounding_box"])
 	object.setConfigParameter("miab_fixed_area_to_scan_bounding_box", itemConf["config"]["miab_fixed_area_to_scan_bounding_box"])
 
+	local podItem = world.containerItemAt(entity.id(), 0)
+	if podItem == nil then return end
+	world.containerConsume(entity.id(), podItem)
+
 	if (not readerBusy()) then
 		-- Options for read process
 		local readerOptions = {}
@@ -417,10 +421,6 @@ function update(dt)
 		elseif (self.miab.buildingStage == PRINTSUCCESS) then
 			blueprint.Init({0, 0})
 			self.miab = nil
-
-			local podItem = world.containerItemAt(entity.id(), 0)
-			if podItem == nil then return end
-			world.containerConsume(entity.id(), podItem)
 		end
 	end
 end
