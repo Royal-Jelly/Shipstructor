@@ -6,15 +6,7 @@
   },
   {
     "op": "remove",
-    "path": "/scripts"
-  },
-  {
-    "op": "add",
-    "path": "/scripts"
-  },
-  {
-    "op": "remove",
-    "path": "/scriptDelta"
+    "path": "/scripts/0"
   },
   {
     "op": "remove",
