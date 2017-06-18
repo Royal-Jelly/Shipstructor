@@ -47,6 +47,8 @@ function checkController()
 	if not validatePod(podItem) then return end -- << Don't do anything with the 
 
 	local itemConf = root.itemConfig(podItem)
+
+	-- For the scanner to be able to "scan" miab_breakStuff has to be FALSE!
 	object.setConfigParameter("miab_breakStuff", itemConf["config"]["miab_breakStuff"])
 	object.setConfigParameter("miab_clearOnly", itemConf["config"]["miab_clearOnly"])
 	object.setConfigParameter("miab_dumpJSON", itemConf["config"]["miab_dumpJSON"])
@@ -57,14 +59,22 @@ function checkController()
 	object.setConfigParameter("miab_printer_offset", itemConf["config"]["miab_printer_offset"])
 
 	if (not readerBusy()) then
-		-- Set options for read process
+		-- Options for read process
 		local readerOptions = {}
-		readerOptions = config.getParameter("miabScannerOptions", nil)
 		readerOptions.readerPosition = object.toAbsolutePosition({ 0.0, 0.0 })
 		readerOptions.spawnPrinterPosition = object.toAbsolutePosition({ 0, 4 })
+		readerOptions.breakStuff = config.getParameter("miab_breakStuff", true)
+		readerOptions.clearOnly = config.getParameter("miab_clearOnly", false)
+		readerOptions.plotJSON = config.getParameter("miab_dumpJSON", false)
+		readerOptions.printerCount = config.getParameter("miab_printerCount", 1)
+		readerOptions.areaToIgnore = config.getParameter("miab_fixed_area_to_ignore_during_scan_bounding_box", nil) -- [left, bottom, right, top]
+		readerOptions.animationDuration = 3
+		readerOptions.areaToScan = config.getParameter("miab_fixed_area_to_scan_bounding_box", nil) -- [left, bottom, right, top]
 		
-		-- start reading process
-		readStart(readerOptions)
+		if (readerOptions.areaToScan ~= nil) then
+			-- start reading process
+			readStart(readerOptions)
+		end
 	end
 end
 
@@ -82,89 +92,58 @@ function update(dt)
 			self.miab.readingStage = SPITOUTPRINTER
 		elseif (self.miab.readingStage == SPITOUTPRINTER) then
 			if (self.miab.breakStuff) then destroyBlocks() end
-			spawnShippodItem() -- Generates a Ship Pod that is broken atm
+			-- spawnPrinterItem()
 			produceJSONOutput()
-			if (not self.miab.breakStuff) then object.smash() end
+			---if (not self.miab.breakStuff) then object.smash() end
 			self.miab.readingStage = READSUCCESS
 		elseif (self.miab.readingStage == READSUCCESS) then
+			-- TODO: Check for self.
+
 			self.miab = nil -- reset scanner state
+
+			-- \/ This can be used to spawn an item with blueprint :D!
 			self.scaned_configTable = blueprint.toConfigTable() -- save scanned table
 			blueprint.Init({0, 0}) -- reset blueprint
 			
 			-- Start to configure writing process
 			local writerOptions = {}
-			local area_to_scan_bounding_box = config.getParameter("miabScannerOptions.areaToScan", nil)
+			local area_to_scan_bounding_box = config.getParameter("miab_fixed_area_to_scan_bounding_box", nil)
 			writerOptions.writerPosition = ({area_to_scan_bounding_box[1],area_to_scan_bounding_box[2]})
-			writerOptions.spawnUnplacablesPosition = object.toAbsolutePosition({ 0, 4 })
 			printInit(writerOptions)
-			donePrinting = false -- flag to end polling
+			donePrinting = false -- flag to end polling	
 		end
 	end
-
+	
 	if (self.miab.buildingStage) then -- only accessed during write
 		if (not donePrinting) then
 			-- needs to be polled
-			donePrinting = printModule_modified_copy_from_miab_basestore_printer()
+			if (self.miab.buildingStage == PRINTINITIALISE) then -- read the Blueprint to be built
+				readBlueprint()
+			elseif (self.miab.buildingStage == PREVIEWBUILDAREA) then -- display the build area indicator
+				self.miab.buildingStage = PLACEBLOCKS
+			elseif (self.miab.buildingStage == PLACEBLOCKS) then -- place scaffolding + blocks
+				printBlocks()
+			elseif (self.miab.buildingStage == PLACETILEMODS) then -- place mods on tiles
+				printTileMods()
+			elseif (self.miab.buildingStage == REMOVESCAFFOLD) then -- remove scaffolding
+				clearScaffolding()
+			elseif (self.miab.buildingStage == PLACEOBJECTS) then -- place objects
+				printObjects()
+			elseif (self.miab.buildingStage == PRINTOBSTRUCTED) then -- area was obstructed
+				FloatObstructed()
+			elseif (self.miab.buildingStage == PRINTUNANCHORED) then -- area was in a void, no blocks could be placed
+				FloatUnanchored()
+			elseif (self.miab.buildingStage == PRINTSUCCESS) then
+				donePrinting = true
+			end
 		else
+			blueprint.Init({0, 0})
 			self.miab = nil
 			--object.smash()
 		end	
 	end
 end
 
-function setScannerStatus(status, sound, colour)
-end
-
-function printModule_modified_copy_from_miab_basestore_printer()
-	if (self.miab == nil) then return false end -- not initialized
-
-	if (self.miab.buildingStage == PRINTINITIALISE) then -- read the Blueprint to be built
-		--sb.logInfo("3.1 - PRINTINITIALISE")
-		readBlueprint()
-	elseif (self.miab.buildingStage == PREVIEWBUILDAREA) then -- display the build area indicator
-		--sb.logInfo("3.2 - PREVIEWBUILDAREA")
-		self.miab.buildingStage = PLACEBLOCKS
-	elseif (self.miab.buildingStage == CLEARBUILDAREA) then -- clear build area
-		--sb.logInfo("3.3 - CLEARBUILDAREA")
-		-- should never happen
-	elseif (self.miab.buildingStage == DOUBLETAPBLOCKS) then -- clear build area
-		--sb.logInfo("3.4 - DOUBLETAPBLOCKS")
-		-- should never happen
-	elseif (self.miab.buildingStage == PLACEBLOCKS) then -- place scaffolding + blocks
-		--sb.logInfo("3.5 - PLACEBLOCKS")
-		printBlocks()
-	elseif (self.miab.buildingStage == PLACETILEMODS) then -- place mods on tiles
-		--sb.logInfo("3.6 - PLACETILEMODS")
-		printTileMods()
-	elseif (self.miab.buildingStage == REMOVESCAFFOLD) then -- remove scaffolding
-		--sb.logInfo("3.7 - REMOVESCAFFOLD")
-		clearScaffolding()
-	elseif (self.miab.buildingStage == PLACEOBJECTS) then -- place objects
-		--sb.logInfo("3.8 - PLACEOBJECTS")
-		printObjects()
-	elseif (self.miab.buildingStage == PLACELIQUIDS) then -- place liquids
-		--sb.logInfo("3.9 - PLACELIQUIDS")
-		printLiquids()
- 	elseif (self.miab.buildingStage == PRINTOBSTRUCTED) then -- area was obstructed
-		--sb.logInfo("3.10 - PRINTOBSTRUCTED")
-		FloatObstructed()
-	elseif (self.miab.buildingStage == PRINTUNANCHORED) then -- area was in a void, no blocks could be placed
-		--sb.logInfo("3.11 - PRINTUNANCHORED")
-		FloatUnanchored()
-	elseif (self.miab.buildingStage == PRINTSUCCESS) then
-		--sb.logInfo("3.12 - PRINTSUCCESS")
-		return true
-	end
-
-	return false
-end
-
--- this spawns a invalid shippods atm because i'm missing related to the _configTbl thing from Modules in a box
--- I Am not exacly sure why this doesn't work but i'm sure im just being dumb
-function spawnShippodItem()
-	local _configTbl = blueprint.toConfigTable()
-	world.spawnItem("storedshipcontroller", self.miab.spawnPrinterPosition, self.miab.printerCount, _configTbl)
-end
 
 --- Function to check if the item is a valid pod
 -- @param itm The item to check
