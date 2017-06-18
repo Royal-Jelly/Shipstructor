@@ -179,7 +179,7 @@ function myClearArea()
 				local objectBreakDrop = world.getObjectParameter(entID, "breakDropOptions")
 				if (objectBreakDrop) then self.miab.looseEnds[world.entityPosition(entID)] = world.entityName(entID) end
 				--
-				if(world.entityName(entID) ~= "teleporter") then -- Blacklist.
+				if(world.entityName(entID) ~= "teleporter" and world.entityName(entID) ~= "avianteleporter" and world.entityName(entID) ~= "floranteleporter" and world.entityName(entID) ~= "glitchteleporter" and world.entityName(entID) ~= "humanteleporter" and world.entityName(entID) ~= "hylotlteleporter" and world.entityName(entID) ~= "novakidteleporter") then -- Blacklist.
 					world.breakObject(entID, true)
 				end
 			elseif (currentEntityType == "plant") then
