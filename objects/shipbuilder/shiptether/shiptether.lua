@@ -363,6 +363,7 @@ function update(dt)
 				dropBlocks()
 			end
 			if (self.miab.givePrinter) then spawnPrinterItem() end
+			-- spawnShippodItem()  -- this spawns an invalid item at the moment and has been disabled
 			if (self.miab.saveBlueprint) then produceJSONOutput() end
 			self.miab.readingStage = DISPLAYANIMATION
 		elseif (self.miab.readingStage == DISPLAYANIMATION) then
@@ -423,6 +424,28 @@ function update(dt)
 		end
 	end
 end
+
+function toConfigTable()
+    local tbl = {}
+    
+    tbl.boundingBoxSize = blueprint.boundingBoxSize
+    tbl.nextBlockId = blueprint.nextBlockId
+    tbl.blocksTable = blueprint.blocksTable
+    tbl.layoutTableBackground = blueprint.layoutTableBackground
+    tbl.layoutTableForeground = blueprint.layoutTableForeground
+    tbl.layoutTableBackgroundMods = blueprint.layoutTableBackgroundMods
+    tbl.layoutTableForegroundMods = blueprint.layoutTableForegroundMods
+    tbl.liquidTable = blueprint.liquidTable
+    tbl.objectTable = blueprint.objectTable
+    
+    return { config = { miab_basestore_blueprint = tbl } }
+end
+
+function spawnShippodItem()
+world.spawnItem("storedshipcontroller", self.miab.spawnPrinterPosition, self.miab.printerCount, toConfigTable())
+end
+
+
 
 --- Function to check if the item is a valid pod
 -- @param itm The item to check
