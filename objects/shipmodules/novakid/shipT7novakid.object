@@ -1,0 +1,32 @@
+{
+
+  "objectName" : "shipT7novakid",
+  "colonyTags" : ["Novakid"],
+  "printable" : false,
+  "rarity" : "Legendary",
+  "description" : "An Novakid ship Tier 7, Not for interstellar travel",
+  "shortdescription" : "Novakid Ship T7",
+  "race" : "novakid",
+
+  "health" : 1000,
+
+  "apexDescription" : "This ship can store lots of cargo, miniknog aproves.",
+  "avianDescription" : "TBA",
+  "floranDescription" : "TBA",
+  "glitchDescription" : "TBA",
+  "humanDescription" : "TBA",
+  "hylotlDescription" : "TBA",
+  "novakidDescription" : "TBA",
+
+  "inventoryIcon" : "shipT0novakidicon.png",
+  "orientations" : [
+    {
+      "imageLayers" : [ { "image" : "/ships/novakid/novakidT7.png:<color>" } ],
+      "renderLayer" : "BackgroundOverlay",
+
+      "imagePosition" : [-424, -80],
+      "frames" : 1,
+      "animationCycle" : 1.0
+	}
+  ]
+}
