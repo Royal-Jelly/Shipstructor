@@ -22,7 +22,6 @@ function update(dt)
 	if storage.state then
 		world.loadRegion( storage.watchBox )
 	end
-	moveEyeball()
 end
 
 function onNodeConnectionChange()
@@ -32,24 +31,14 @@ function onNodeConnectionChange()
 	else
 		object.setInteractive(true)
 	end
-	moveEyeball()
 end
 
 function onInboundNodeChange()
 	storage.state=object.getInputNodeLevel(0)
-	moveEyeball()
 end
 
 function onInteraction(args)
 	storage.state = not storage.state
-	moveEyeball()
-end
-function moveEyeball()
-	if storage.state then
-		animator.setAnimationState("eyeState","opening")
-	else
-		animator.setAnimationState("eyeState","closing")
-	end
 end
 
 function uninit()

@@ -1,5 +1,4 @@
 {
-
   "objectName" : "shipT8apex",
   "colonyTags" : ["Apex"],
   "printable" : false,
@@ -28,5 +27,9 @@
       "frames" : 1,
       "animationCycle" : 1.0
 	}
-  ]
+  ],
+
+  "scripts" : [ "/objects/shipmodules/shipchunkloader.lua" ],
+  "scriptDelta" : 120,
+  "inputNodes":[[0,0]]
 }
