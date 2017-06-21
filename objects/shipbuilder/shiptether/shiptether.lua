@@ -362,8 +362,7 @@ function update(dt)
 				cleanUpLooseEnds()
 				dropBlocks()
 			end
-			if (self.miab.givePrinter) then spawnPrinterItem() end
-			spawnShippodItem()  -- this spawns an invalid item at the moment and has been disabled
+			if (self.miab.givePrinter) then spawnShippodItem()  end  -- this spawns an invalid item at the moment and has been disabled
 			if (self.miab.saveBlueprint) then produceJSONOutput() end
 			self.miab.readingStage = DISPLAYANIMATION
 		elseif (self.miab.readingStage == DISPLAYANIMATION) then
