@@ -39,10 +39,10 @@
   "miabScannerOptions" : {
     "clearArea" : false,
     "dropContents" : false,
-    "givePrinter" : true,
+    "givePrinter" : false,
     "printerCount" : 1,
-    "printerName" : "Building Printer",
-    "printerDescription" : "A device that will construct a building from its internal blueprint",
+    "printerName" : "<Player>'s custom Nanite Pod",
+    "printerDescription" : "A vairent of the Nanitepod that will construct a starship its internal blueprint",
     "printerIcon" : "/objects/basestorage/miab_basestore_printer/inventoryicons/_base.png",
     "saveBlueprint" : false,
     "scannerSize" : [2, 2],

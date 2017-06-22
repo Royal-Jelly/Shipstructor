@@ -353,7 +353,7 @@ function update(dt)
 			if (self.miab == nil) then return end
 			if (self.miab.clearArea) then
 				dropLiquids()
-				--dropObjects()
+				dropObjects()
 				dropBlocks()
 			end
 			self.miab.readingStage = SPITOUTPRINTER
@@ -437,7 +437,7 @@ function toConfigTable()
     tbl.liquidTable = blueprint.liquidTable
     tbl.objectTable = blueprint.objectTable
     
-    return { config = { miab_basestore_blueprint = tbl } }
+    return {miab_basestore_blueprint = tbl }
 end
 
 function spawnShippodItem()
