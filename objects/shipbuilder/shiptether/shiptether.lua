@@ -179,7 +179,7 @@ function myClearArea()
 				local objectBreakDrop = world.getObjectParameter(entID, "breakDropOptions")
 				if (objectBreakDrop) then self.miab.looseEnds[world.entityPosition(entID)] = world.entityName(entID) end
 				--
-				if(world.entityName(entID) ~= "teleporter" and world.entityName(entID) ~= "avianteleporter" and world.entityName(entID) ~= "floranteleporter" and world.entityName(entID) ~= "glitchteleporter" and world.entityName(entID) ~= "humanteleporter" and world.entityName(entID) ~= "hylotlteleporter" and world.entityName(entID) ~= "novakidteleporter") then -- Blacklist.
+				if(world.entityName(entID) ~= "teleporter" and world.entityName(entID) ~= "avianteleporter" and world.entityName(entID) ~= "floranteleporter" and world.entityName(entID) ~= "glitchteleporter" and world.entityName(entID) ~= "humanteleporter" and world.entityName(entID) ~= "hylotlteleporter" and world.entityName(entID) ~= "novakidteleporter" and world.entityName(entID) ~= "apexshiptether" and world.entityName(entID) ~= "avianshiptether" and world.entityName(entID) ~= "floranshiptether" and world.entityName(entID) ~= "glitchshiptether" and world.entityName(entID) ~= "humanshiptether" and world.entityName(entID) ~= "hylotlshiptether" and world.entityName(entID) ~= "novakidshiptether") then -- Blacklist.
 					world.breakObject(entID, true)
 				end
 			elseif (currentEntityType == "plant") then
@@ -300,7 +300,7 @@ function checkController()
 		readerOptions.spawnPrinterPosition = object.toAbsolutePosition({ 0, 4 })
 		readerOptions.saveBlueprint = config.getParameter("miab_dumpJSON", false)
 		readerOptions.areaToIgnore = config.getParameter("miab_fixed_area_to_ignore_during_scan_bounding_box", nil) -- [left, bottom, right, top]
-		readerOptions.areaToScan = config.getParameter("miab_fixed_area_to_scan_bounding_box", nil) -- [left, bottom, right, top]
+		readerOptions.areaToScan = config.getParameter("miab_fixed_area_to_scan_bounding_box", nil)  or  defineAreaToScan(readerOptions.scannerSize, readerOptions.scannerOrigin) -- [left, bottom, right, top]
 		readerOptions.animationDuration = 0
 		
 		--if (readerOptions.areaToScan ~= nil) then
@@ -423,6 +423,102 @@ function update(dt)
 		end
 	end
 end
+
+-- This function was usefull in making it so i could create shippods easier you must use two recivers in order to get a good blueprint
+function defineAreaToScan(scannerSize, scannerOrigin)
+	local bounds = {0, 0, 0, 0}
+	local pos1 = entity.position() -- default corners are the corners of the scanner itself
+	local pos2 = entity.position()
+	local ents = object.getOutputNodeIds(0)
+	local useScannerAsCorner = true
+
+	-- handle different ammounts of receivers and wired or not
+	--setupCorners()
+	if (self.cornerCount == 0) then
+		return nil
+	elseif (self.cornerCount == 1) then
+		-- use one corner and the scanner itself
+		pos2 = world.entityPosition(self.corners[1])
+	else
+		-- use two corners
+		pos1 = world.entityPosition(self.corners[1])
+		pos2 = world.entityPosition(self.corners[2])
+		useScannerAsCorner = false
+	end
+	
+	-- find smallest X Corner coordinate of the two corners
+	-- and use that for the left of the bounding box
+	-- use the bigger one for right side
+	-- using world.distance()
+	local dist = world.distance(pos2, pos1)
+	local xMax = dist[1]
+	local yMax = dist[2]
+	if (xMax > 1) then
+		bounds[1] = pos1[1] -- left
+		bounds[3] = pos2[1] -- right
+		scannerCornerX = "left" -- if one of the corners is the scanner it is the left one
+	elseif (xMax < 1) then
+		bounds[1] = pos2[1] -- left
+		bounds[3] = pos1[1] -- right
+		scannerCornerX = "right" -- if one of the corners is the scanner it is the right one
+	else
+		return nil
+	end
+
+	-- find smallest Y Corner coordinate of the two corners
+	-- and use that for the bottom of the bounding box
+	-- use the bigger one for top side
+	if (pos1[2] < pos2[2]) then
+		bounds[2] = pos1[2] -- down
+		bounds[4] = pos2[2] -- up
+	elseif (pos1[2] > pos2[2]) then
+		bounds[2] = pos2[2] -- down
+		bounds[4] = pos1[2] -- up
+	else
+		return nil
+	end
+	
+	if (useScannerAsCorner) then
+		-- we have to shift a bit accoring to the size of the scanner
+		-- X coordinate shift due to scanner size
+		if (scannerCornerX == "left") then
+			-- if the scanner is left corner
+			bounds[1] = bounds[1] + (scannerSize[1] - scannerOrigin[1])
+		elseif (scannerCornerX == "right") then
+			-- if the scanner is right corner
+			bounds[3] = bounds[3] + (scannerSize[1] - scannerOrigin[1]) - scannerSize[1] +1
+		else
+			return nil
+		end
+		-- Y coordinate is not of interest. we allways use the origin of the scanner.
+		-- not adapting Y will never leed to the scanner beeing eaten by itself
+	end
+
+	-- so far we are directly ON the corners.
+	-- we sorted out which one is bottom left and which one is top right
+	-- we also shifted one of the corners if it was the scanner itself accoring to the size of the scanner in order not to eat the scanner itself
+
+	-- we now apply an offset for the box.
+	-- we dont want to scan AT the corners, but inside of the corners (in X direction "inside")
+	-- Offsets for scanning objects:
+	-- 1 block right, 0 blocks up for bottom left
+	-- 1 block left, 0 blocks down for top right
+	bounds[1] = bounds[1] + 1.0 --( <- offset from bottom left
+	bounds[2] = bounds[2] + 0.0 --(
+	bounds[3] = bounds[3] - 1.0 --( <- offset from top right corner_2
+	bounds[4] = bounds[4] - 0.0 --(
+
+	-- although this is already checked we check again if the box has a zero or negativ area
+	-- "negative" meaing that what is left and right (or up and down) might be labled wrong
+	dist = world.distance({bounds[3], bounds[4]}, {bounds[1], bounds[2]})
+	xMax = dist[1]
+	yMax = dist[2]
+	if (xMax < 1) or (yMax < 1) then
+		return nil
+	end
+	return bounds
+end
+
 
 function toConfigTable()
     local tbl = {}

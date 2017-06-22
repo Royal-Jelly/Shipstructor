@@ -23,7 +23,7 @@
   "inventoryIcon" : "novakidshiptether_icon.png",
   "orientations" : [
 	{
-	  "dualImage" : "novekidshiptether.png:<color>.<key>",
+	  "dualImage" : "novakidshiptether.png:<color>.<key>",
 	  "imagePosition" : [-13, 0],
 	  "renderLayer" : "Object+5"
 	}

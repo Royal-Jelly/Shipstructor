@@ -45,8 +45,8 @@
     "printerDescription" : "A vairent of the Nanitepod that will construct a starship its internal blueprint",
     "printerIcon" : "/objects/basestorage/miab_basestore_printer/inventoryicons/_base.png",
     "saveBlueprint" : false,
-    "scannerSize" : [2, 2],
-    "scannerOrigin" : [2, 1],
+    "scannerSize" : [2, 3],
+    "scannerOrigin" : [2, 0],
     "defaultAnimation" : "inactive",
     "animationDuration" : 0
   },
@@ -58,5 +58,11 @@
     "/scripts/basestorage/miab_basestore_blueprint.lua",
     "/scripts/basestorage/miab_basestore_util.lua"
   ],
-  "scriptDelta" : 5
+  "scriptDelta" : 5,
+
+  "inputNodes" :  [ [-2, 0] ],
+  "outputNodes" : [ [ 0, 0] ],
+
+  "miab_scannerSize" : [2, 3],
+  "miab_scannerOrigin" : [2, 0]
 }
