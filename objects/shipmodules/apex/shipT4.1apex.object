@@ -24,7 +24,7 @@
       "imageLayers" : [ { "image" : "/ships/apex/apexT4.png:default.0" } ],
       "renderLayer" : "BackgroundOverlay",
 
-      "imagePosition" : [-380, -136],
+      "imagePosition" : [-424, -136],
       "frames" : 1,
       "animationCycle" : 1.0
 	}
