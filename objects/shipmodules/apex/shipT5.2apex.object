@@ -1,11 +1,11 @@
 {
 
-  "objectName" : "shipT5apex",
+  "objectName" : "shipT5.2apex",
   "colonyTags" : ["Apex"],
   "printable" : false,
   "rarity" : "Legendary",
-  "description" : "An Apex ship Tier 5, Not for interstellar travel",
-  "shortdescription" : "Apex Ship T5",
+  "description" : "An Apex ship Tier 5.2, Not for interstellar travel",
+  "shortdescription" : "Apex Ship T5.2",
   "race" : "apex",
 
   "health" : 1000,
@@ -21,10 +21,10 @@
   "inventoryIcon" : "shipT0apexicon.png",
   "orientations" : [
     {
-      "imageLayers" : [ { "image" : "/ships/apex/apexT5.png:<color>" } ],
+      "imageLayers" : [ { "image" : "/ships/apex/apexT5.png:default.1" } ],
       "renderLayer" : "BackgroundOverlay",
 
-      "imagePosition" : [-808, -224],
+      "imagePosition" : [-60, -224],
       "frames" : 1,
       "animationCycle" : 1.0
 	}

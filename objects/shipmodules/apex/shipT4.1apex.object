@@ -1,0 +1,32 @@
+{
+
+  "objectName" : "shipT4.1apex",
+  "colonyTags" : ["Apex"],
+  "printable" : false,
+  "rarity" : "Legendary",
+  "description" : "An Apex ship Tier 4.1, Not for interstellar travel",
+  "shortdescription" : "Apex Ship T4.1",
+  "race" : "apex",
+
+  "health" : 1000,
+
+  "apexDescription" : "This ship can store lots of cargo, miniknog aproves.",
+  "avianDescription" : "TBA",
+  "floranDescription" : "TBA",
+  "glitchDescription" : "TBA",
+  "humanDescription" : "TBA",
+  "hylotlDescription" : "TBA",
+  "novakidDescription" : "TBA",
+
+  "inventoryIcon" : "shipT0apexicon.png",
+  "orientations" : [
+    {
+      "imageLayers" : [ { "image" : "/ships/apex/apexT4.png:default.0" } ],
+      "renderLayer" : "BackgroundOverlay",
+
+      "imagePosition" : [-380, -136],
+      "frames" : 1,
+      "animationCycle" : 1.0
+	}
+  ]
+}
