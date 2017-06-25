@@ -1,0 +1,32 @@
+{
+
+  "objectName" : "shipT2avali",
+  "colonyTags" : ["Avali"],
+  "printable" : false,
+  "rarity" : "Legendary",
+  "description" : "An Avali ship Tier 2, Not for interstellar travel",
+  "shortdescription" : "Avali Ship T2",
+  "race" : "avali",
+
+  "health" : 1000,
+
+  "apexDescription" : "This ship can store lots of cargo, miniknog aproves.",
+  "avianDescription" : "TBA",
+  "floranDescription" : "TBA",
+  "glitchDescription" : "TBA",
+  "humanDescription" : "TBA",
+  "hylotlDescription" : "TBA",
+  "novakidDescription" : "TBA",
+
+  "inventoryIcon" : "shipT0avaliicon.png",
+  "orientations" : [
+    {
+      "imageLayers" : [ { "image" : "/ships/avali/avaliT2.png:default.0" } ],
+      "renderLayer" : "BackgroundOverlay",
+
+      "imagePosition" : [-496, -256],
+      "frames" : 1,
+      "animationCycle" : 1.0
+	}
+  ]
+}
