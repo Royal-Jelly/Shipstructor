@@ -1,16 +1,16 @@
 {
 
-  "objectName" : "shipT4avian",
+  "objectName" : "shipT5.2avian",
   "colonyTags" : ["Avian"],
   "printable" : false,
   "rarity" : "Legendary",
-  "description" : "An Avian ship Tier 4, Not for interstellar travel",
-  "shortdescription" : "Avian Ship T4",
+  "description" : "An Avian ship Tier 5.2, Not for interstellar travel",
+  "shortdescription" : "Avian Ship T5.2",
   "race" : "avian",
 
   "health" : 1000,
 
-  "apexDescription" : "This ship can store lots of cargo, miniknog aproves.",
+  "avianDescription" : "This ship can store lots of cargo, miniknog aproves.",
   "avianDescription" : "TBA",
   "floranDescription" : "TBA",
   "glitchDescription" : "TBA",
@@ -21,10 +21,10 @@
   "inventoryIcon" : "shipT0avianicon.png",
   "orientations" : [
     {
-      "imageLayers" : [ { "image" : "/ships/avian/avianT4.png:<color>" } ],
+      "imageLayers" : [ { "image" : "/ships/avian/avianT5.png:default.1" } ],
       "renderLayer" : "BackgroundOverlay",
 
-      "imagePosition" : [-424, -80],
+      "imagePosition" : [-60, -224],
       "frames" : 1,
       "animationCycle" : 1.0
 	}
