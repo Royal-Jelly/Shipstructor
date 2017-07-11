@@ -1,23 +1,17 @@
 function myClearModdedBlocks()
-	local bl = { self.miab.pos[1], self.miab.pos[2] }
-	local tr = { self.miab.pos[1] + blueprint.boundingBoxSize[1], self.miab.pos[2] + blueprint.boundingBoxSize[2] }
+    local bl = { self.miab.pos[1] - 100, self.miab.pos[2] - 100}
+    local tr = { self.miab.pos[1] + blueprint.boundingBoxSize[1] + 100, self.miab.pos[2] + blueprint.boundingBoxSize[2] + 100}
+	
+    for _y = tr[2], bl[2], -1 do
+        for _x = bl[1], tr[1], 1 do
+            local y = tostring(math.floor(_y - bl[2]))
+            local x = tostring(math.floor(_x - bl[1]))
+			breakBlock({_x, _y}, "foreground")
+			breakBlock({_x, _y}, "background")
+        end
+    end
 
-	for _y = tr[2], bl[2], -1 do
-		for _x = bl[1], tr[1], 1 do
-			local __y = tostring(math.floor(_y - bl[2]))
-			local __x = tostring(math.floor(_x - bl[1]))
-			if (blueprint.layoutTableForeground ~= nil and
-				blueprint.layoutTableForeground[__y] ~= nil and
-				blueprint.layoutTableForeground[__y][__x] ~= nil and
-				blueprint.layoutTableForeground[__y][__x] > 0) then breakBlock({_x, _y}, "foreground") end
-			if (blueprint.layoutTableForeground ~= nil and
-				blueprint.layoutTableBackground[__y] ~= nil and
-				blueprint.layoutTableBackground[__y][__x] ~= nil and
-				blueprint.layoutTableBackground[__y][__x] > 0) then breakBlock({_x, _y}, "background") end
-		end
-	end
-
-	self.miab.buildingStage = PLACEBLOCKS
+    self.miab.buildingStage = PLACEBLOCKS
 end
 
 function scanBuilding()
@@ -134,8 +128,8 @@ function myClearArea()
 	self.miab.obstructionTable = {}
 	self.miab.anythingPrinted = false
 	
-	local bl = { self.miab.pos[1], self.miab.pos[2] }
-	local tr = { self.miab.pos[1] + blueprint.boundingBoxSize[1], self.miab.pos[2] + blueprint.boundingBoxSize[2] }
+    local bl = { self.miab.pos[1] - 100, self.miab.pos[2] - 100}
+    local tr = { self.miab.pos[1] + blueprint.boundingBoxSize[1] + 100, self.miab.pos[2] + blueprint.boundingBoxSize[2] + 100}
 	local entityCount = nil
 	local entityIDs = {}
 	local currentEntityType = nil
@@ -190,24 +184,14 @@ function myClearArea()
 		end
 	end
 
-	for _y = tr[2], bl[2], -1 do
-		for _x = bl[1], tr[1], 1 do
-			local __y = tostring(math.floor(_y - bl[2]))
-			local __x = tostring(math.floor(_x - bl[1]))
-			if (blueprint.layoutTableForeground ~= nil and
-				blueprint.layoutTableForeground[__y] ~= nil and
-				blueprint.layoutTableForeground[__y][__x] ~= nil and
-				blueprint.layoutTableForeground[__y][__x] > 0) then
-					breakBlock({_x, _y}, "foreground")
-			end
-			if (blueprint.layoutTableBackground ~= nil and
-				blueprint.layoutTableBackground[__y] ~= nil and
-				blueprint.layoutTableBackground[__y][__x] ~= nil and
-				blueprint.layoutTableBackground[__y][__x] > 0) then
-				breakBlock({_x, _y}, "background")
-			end
-		end
-	end
+    for _y = tr[2], bl[2], -1 do
+        for _x = bl[1], tr[1], 1 do
+            local y = tostring(math.floor(_y - bl[2]))
+            local x = tostring(math.floor(_x - bl[1]))
+			breakBlock({_x, _y}, "foreground")
+			breakBlock({_x, _y}, "background")
+        end
+    end
 
 	if (entityCount > 0) then
 		-- there are entities blocking placement

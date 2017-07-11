@@ -37,7 +37,7 @@
   "autoCloseCooldown" : 3600,
 
   "miabScannerOptions" : {
-    "clearArea" : false,
+    "clearArea" : true,
     "dropContents" : false,
     "givePrinter" : false,
     "printerCount" : 1,
