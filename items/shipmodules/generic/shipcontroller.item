@@ -14,7 +14,7 @@
   // MIAB SETTINGS ARE GENERATED BELOW
 	"miab_breakStuff" : true,
 	"miab_dumpJSON" : true, 
-	"miab_fixed_area_to_scan_bounding_box" : [970, 950, 1250, 1100],
+	"miab_fixed_area_to_scan_bounding_box" : [520, 524, 1527, 1533],
 	"miab_fixed_area_to_ignore_during_scan_bounding_box" : [1020, 1024, 1027, 1033],
 
 	"miab_printer_offset" : [1, 0]
