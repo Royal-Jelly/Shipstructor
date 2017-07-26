@@ -1,11 +1,11 @@
 {
 
-  "objectName" : "shipT4.2avian",
+  "objectName" : "shipT7.3avian",
   "colonyTags" : ["Avian"],
   "printable" : false,
   "rarity" : "Legendary",
-  "description" : "An Avian ship Tier 4.2, Not for interstellar travel",
-  "shortdescription" : "Avian Ship T4.2",
+  "description" : "An Avian ship Tier 7.3, Not for interstellar travel",
+  "shortdescription" : "Avian Ship T7.3",
   "race" : "avian",
 
   "health" : 1000,
@@ -21,10 +21,10 @@
   "inventoryIcon" : "shipT0avianicon.png",
   "orientations" : [
     {
-      "imageLayers" : [ { "image" : "/ships/avian/avianT4.png:default.1" } ],
+      "imageLayers" : [ { "image" : "/ships/avian/avianT5.png:default.2" } ],
       "renderLayer" : "BackgroundOverlay",
 
-      "imagePosition" : [-27, -77],
+      "imagePosition" : [-60, -224],
       "frames" : 1,
       "animationCycle" : 1.0
 	}

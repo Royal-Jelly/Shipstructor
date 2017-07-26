@@ -1,11 +1,11 @@
 {
 
-  "objectName" : "shipT6avian",
+  "objectName" : "shipT6.3avian",
   "colonyTags" : ["Avian"],
   "printable" : false,
   "rarity" : "Legendary",
-  "description" : "An Avian ship Tier 6, Not for interstellar travel",
-  "shortdescription" : "Avian Ship T6",
+  "description" : "An Avian ship Tier 6.3, Not for interstellar travel",
+  "shortdescription" : "Avian Ship T6.3",
   "race" : "avian",
 
   "health" : 1000,
@@ -21,10 +21,10 @@
   "inventoryIcon" : "shipT0avianicon.png",
   "orientations" : [
     {
-      "imageLayers" : [ { "image" : "/ships/avian/avianT6.png:<color>" } ],
+      "imageLayers" : [ { "image" : "/ships/avian/avianT5.png:default.2" } ],
       "renderLayer" : "BackgroundOverlay",
 
-      "imagePosition" : [-424, -80],
+      "imagePosition" : [-60, -224],
       "frames" : 1,
       "animationCycle" : 1.0
 	}
