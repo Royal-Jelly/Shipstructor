@@ -1,9 +1,9 @@
 {
   "itemName" : "hylotlT3shipcontroller",
-  "price" : 25000,
-  "rarity" : "Rare",
+  "price" : 15000,
+  "rarity" : "Uncommon",
   "category" : "ShipController",
-  "description" : "An Hylotl Star cruiser which has been stord in a Nanite controller, can only be used with the ship tether.",
+  "description" : "A Generic Nanite Controller, except a whole starship's blueprint is stored inside.",
   "shortdescription" : "Hylotl T3 Ship Controller",
   "twoHanded" : true,
   "maxStack" : 1,
