@@ -24,7 +24,7 @@
       "imageLayers" : [ { "image" : "/ships/avian/avianT5.png:default.0" } ],
       "renderLayer" : "BackgroundOverlay",
 
-      "imagePosition" : [-232, -224],
+      "imagePosition" : [-435, -77],
       "frames" : 1,
       "animationCycle" : 1.0
 	}
