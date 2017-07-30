@@ -12,8 +12,8 @@
   "inventoryIcon" : "aviancontroller.png",
 
   // MIAB SETTINGS -- [left, bottom, right, top]
-	"miab_breakStuff" : false,
-	"miab_dumpJSON" : true, 
+	"miab_breakStuff" : true,
+	"miab_dumpJSON" : false, 
 	"miab_fixed_area_to_scan_bounding_box" : [962, 1018, 1075, 1048],
 	"miab_fixed_area_to_ignore_during_scan_bounding_box" : [1020, 1024, 1027, 1033],
 

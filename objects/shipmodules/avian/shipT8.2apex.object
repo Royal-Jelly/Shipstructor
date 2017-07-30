@@ -21,7 +21,7 @@
   "inventoryIcon" : "shipT0avianicon.png",
   "orientations" : [
     {
-      "imageLayers" : [ { "image" : "/ships/avian/avianT5.png:default.1" } ],
+      "imageLayers" : [ { "image" : "/ships/avian/avianT8.png:default.1" } ],
       "renderLayer" : "BackgroundOverlay",
 
       "imagePosition" : [-60, -224],
