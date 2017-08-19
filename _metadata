@@ -1,11 +1,10 @@
 {
   "author" : "Royal~Jelly",
+  "name" : "shipstructor",
   "description" : "***Disclaimer: Installing Shipstructor is a one-way trip.***",
   "friendlyName" : "Shipstructor",
   "includes" : ["modules-in-a-box"],
   "link" : "",
-  "name" : "shipstructor",
-  "requires" : ["modules-in-a-box"],
   "steamContentId" : "",
   "version" : "1.2.8"
 }
