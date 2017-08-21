@@ -1,61 +1,43 @@
 [
   {
+    "op": "replace",
+    "path": "/interactAction",
+    "value": "OpenCraftingInterface"
+  },
+  {
+    "op": "remove",
+    "path": "/interactData/buyFactor"
+  },
+  {
+    "op": "remove",
+    "path": "/interactData/sellFactor"
+  },
+  {
     "op": "remove",
     "path": "/interactData/items"
   },
   {
     "op": "add",
-    "path": "/interactData/items",
+    "path": "/interactData/filter",
     "value": [
-      { "item": "apexT3shipcontroller" },
-      { "item": "apexT4shipcontroller" },
-      { "item": "apexT5shipcontroller" },
-      { "item": "apexT6shipcontroller" },
-      { "item": "apexT7shipcontroller" },
-      { "item": "apexT8shipcontroller" },
-
-      { "item": "avianT3shipcontroller" },
-      { "item": "avianT4shipcontroller" },
-      { "item": "avianT5shipcontroller" },
-      { "item": "avianT6shipcontroller" },
-      { "item": "avianT7shipcontroller" },
-      { "item": "avianT8shipcontroller" },
-
-      { "item": "floranT3shipcontroller" },
-      { "item": "floranT4shipcontroller" },
-      { "item": "floranT5shipcontroller" },
-      { "item": "floranT6shipcontroller" },
-      { "item": "floranT7shipcontroller" },
-      { "item": "floranT8shipcontroller" },
-
-      { "item": "glitchT3shipcontroller" },
-      { "item": "glitchT4shipcontroller" },
-      { "item": "glitchT5shipcontroller" },
-      { "item": "glitchT6shipcontroller" },
-      { "item": "glitchT7shipcontroller" },
-      { "item": "glitchT8shipcontroller" },
-
-      { "item": "humanT3shipcontroller" },
-      { "item": "humanT4shipcontroller" },
-      { "item": "humanT5shipcontroller" },
-      { "item": "humanT6shipcontroller" },
-      { "item": "humanT7shipcontroller" },
-      { "item": "humanT8shipcontroller" },
-
-      { "item": "hylotlT3shipcontroller" },
-      { "item": "hylotlT4shipcontroller" },
-      { "item": "hylotlT5shipcontroller" },
-      { "item": "hylotlT6shipcontroller" },
-      { "item": "hylotlT7shipcontroller" },
-      { "item": "hylotlT8shipcontroller" },
-
-      { "item": "novakidT3shipcontroller" },
-      { "item": "novakidT4shipcontroller" },
-      { "item": "novakidT5shipcontroller" },
-      { "item": "novakidT6shipcontroller" },
-      { "item": "novakidT7shipcontroller" },
-      { "item": "novakidT8shipcontroller" }
-
+      "penguinbay"
     ]
+  },
+  {
+    "op": "replace",
+    "path": "/interactData/config",
+    "value": "/interface/windowconfig/craftingmerchant.config"
+  },
+  {
+    "op": "add",
+    "path": "/interactData/paneLayoutOverride/windowtitle/icon",
+    "value": {
+      "file": "/interface/crafting/penguinbay.png"
+    }
+  },
+  {
+    "op": "replace",
+    "path": "/interactData/paneLayoutOverride/windowtitle/subtitle",
+    "value": "100% legal starship modification"
   }
 ]
