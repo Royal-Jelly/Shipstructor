@@ -1,14 +1,9 @@
 [
-	{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"spacesuitback"} },
-	{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"spacesuitchest"} },
-	{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"spacesuithead"} },
-	{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"spacesuitlegs"} },
-	
-	{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"miab_basestore_receiver"} },
-	{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"miab_basestore_scanner"} },
-	
+	// Shipstructor
+
 	//{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"floranshiplight"} },
 	//{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"floranquestconsole"} },
+	
 	{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"florancaptainschair"} },
 	{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"floranfuelhatch"} },
 	{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"floranshipdoor"} },
