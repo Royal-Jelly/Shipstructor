@@ -9,7 +9,7 @@
   "race" : "apex",
   "health" : 1000,
 
-  "description" : "HAZARD WARNING: If you spawned this in via admin mode you may not be able to break it.",
+  "description" : "     ***HAZARD WARNING*** /nThis object can and will consume your ship.",
   "shortdescription" : "Apex Ship Tether",
 
   "apexDescription" : "A hi-tech ship tether. It looks you can swap your ship here.",
