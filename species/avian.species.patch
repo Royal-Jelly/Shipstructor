@@ -1,14 +1,9 @@
 [
-	{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"spacesuitback"} },
-	{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"spacesuitchest"} },
-	{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"spacesuithead"} },
-	{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"spacesuitlegs"} },
-	
-	{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"miab_basestore_receiver"} },
-	{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"miab_basestore_scanner"} },
-	
-	//{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"avianshiplight"} },
+	// Shipstructor
+
+  //{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"avianshiplight"} },
 	//{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"avianquestconsole"} },
+	
 	{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"aviancaptainschair"} },
 	{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"avianfuelhatch"} },
 	{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"avianshipdoor"} },
