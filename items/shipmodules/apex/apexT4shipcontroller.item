@@ -1,10 +1,10 @@
 {
   "itemName" : "apexT4shipcontroller",
-  "price" : 30000,
-  "rarity" : "Uncommon",
+  "price" : 3000,
+  "rarity" : "Legendary",
   "category" : "ShipController",
-  "description" : "A Generic Nanite Controller, except a whole starship's blueprint is stored inside.",
-  "shortdescription" : "Apex T4 Ship Controller",
+  "description" : "A Nanite Module, build yourself a whole ship from stored nanites.",
+  "shortdescription" : "Apex T4 Ship Module",
   "twoHanded" : true,
   "maxStack" : 1,
   "itemTags" : ["shipcontroller"],
@@ -79,131 +79,37 @@
 		"layoutTableForegroundMods" : {
 		},
 		"objectTable" : {
-			"1" : {
-				"112" : {
-					"facing" : 1,
-					"name" : "smallboosterflame",
-					"jsonParameters" : {
-					}
-				},
-				"70" : {
-					"facing" : 1,
-					"name" : "smallboosterflame",
-					"jsonParameters" : {
-					}
-				},
-				"58" : {
-					"facing" : 1,
-					"name" : "smallboosterflame",
-					"jsonParameters" : {
-					}
-				},
-				"99" : {
-					"facing" : -1,
-					"name" : "smallboosterflame",
-					"jsonParameters" : {
-					}
-				}
+			"1" : {  
+                "112" : {  "facing" : 1,  "name" : "smallboosterflame",  "jsonParameters" : {  }  },  
+                "70" : {  "facing" : 1,  "name" : "smallboosterflame",  "jsonParameters" : {  }  },  
+                "58" : {  "facing" : 1,  "name" : "smallboosterflame",  "jsonParameters" : {  }  },  
+                "99" : {  "facing" : -1,  "name" : "smallboosterflame",  "jsonParameters" : {  }  }
 			},
-			"8" : {
-				"92" : {
-					"facing" : -1,
-					"contents" : {
-					},
-					"name" : "apexshiplocker",
-					"jsonParameters" : {
-					}
-				},
-				"113" : {
-					"facing" : -1,
-					"name" : "techstation",
-					"jsonParameters" : {
-					}
-				}
+			"8" : {  
+                "92" : {  "facing" : -1,  "name" : "apexshiplocker",  "contents" : {  },  "jsonParameters" : {  }  },  
+                "113" : {  "facing" : -1,  "name" : "techstation",  "jsonParameters" : {  }  }
 			},
-			"9" : {
-				"121" : {
-					"facing" : -1,
-					"contents" : {
-					},
-					"name" : "apexfuelhatch",
-					"jsonParameters" : {
-					}
-				}
+			"9" : {  
+                "121" : {  "facing" : -1,  "contents" : {  },  "name" : "apexfuelhatch",  "jsonParameters" : {  }  }
 			},
-			"12" : {
-				"87" : {
-					"facing" : -1,
-					"name" : "shipT4.2apex",
-					"jsonParameters" : {
-					}
-				},
-				"77" : {
-					"facing" : -1,
-					"name" : "shipT4.1apex",
-					"jsonParameters" : {
-					}
-				}
+			"12" : {  
+                "87" : {  "facing" : -1,  "name" : "shipT4.2apex",  "jsonParameters" : {  }  },  
+                "77" : {  "facing" : -1,  "name" : "shipT4.1apex",  "jsonParameters" : {  }  }
 			},
-			"14" : {
-				"34" : {
-					"facing" : 1,
-					"name" : "boosterflameapex",
-					"jsonParameters" : {
-					}
-				}
+			"14" : { 
+                 "34" : {  "facing" : 1,  "name" : "boosterflameapex",  "jsonParameters" : {  }  }
 			},
-			"6" : {
-				"126" : {
-					"facing" : 1,
-					"name" : "apexcaptainschair",
-					"jsonParameters" : {
-					}
-				},
-				"77" : {
-					"facing" : 1,
-					"name" : "apexshipdoor",
-					"jsonParameters" : {
-					}
-				},
-				"118" : {
-					"facing" : -1,
-					"name" : "apexshipdoor",
-					"jsonParameters" : {
-					}
-				},
-				"87" : {
-					"facing" : -1,
-					"name" : "apexshipdoor",
-					"jsonParameters" : {
-					}
-				}
+			"6" : {  
+                "126" : {  "facing" : 1,  "name" : "apexcaptainschair",  "jsonParameters" : {  }  },  
+                "77" : {  "facing" : 1,  "name" : "apexshipdoor",  "jsonParameters" : {  }  },  
+                "118" : {  "facing" : -1,  "name" : "apexshipdoor",  "jsonParameters" : {  }  },  
+                "87" : {  "facing" : -1,  "name" : "apexshipdoor",  "jsonParameters" : {  }  }
 			},
-			"15" : {
-				"72" : {
-					"facing" : 1,
-					"name" : "apexshiplight",
-					"jsonParameters" : {
-					}
-				},
-				"92" : {
-					"facing" : 1,
-					"name" : "apexshiplight",
-					"jsonParameters" : {
-					}
-				},
-				"58" : {
-					"facing" : 1,
-					"name" : "apexshiplight",
-					"jsonParameters" : {
-					}
-				},
-				"106" : {
-					"facing" : 1,
-					"name" : "apexshiplight",
-					"jsonParameters" : {
-					}
-				}
+			"15" : {  
+                "72" : {  "facing" : 1,  "name" : "apexshiplight",  "jsonParameters" : {  }  },  
+                "92" : {  "facing" : 1,  "name" : "apexshiplight",  "jsonParameters" : {  }  },  
+                "58" : {  "facing" : 1,  "name" : "apexshiplight",  "jsonParameters" : {  }  },  
+                "106" : {  "facing" : 1,  "name" : "apexshiplight",  "jsonParameters" : {  }  }
 			}
 		}
 	}

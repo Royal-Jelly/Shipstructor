@@ -1,10 +1,10 @@
 {
   "itemName" : "apexT7shipcontroller",
-  "price" : 240000,
+  "price" : 3000,
   "rarity" : "Legendary",
   "category" : "ShipController",
-  "description" : "A Generic Nanite Controller, except a whole starship's blueprint is stored inside.",
-  "shortdescription" : "Apex T7 Ship Controller",
+  "description" : "A Nanite Module, build yourself a whole ship from stored nanites.",
+  "shortdescription" : "Apex T7 Ship Module",
   "twoHanded" : true,
   "maxStack" : 1,
   "itemTags" : ["shipcontroller"],
@@ -20,11 +20,8 @@
 	"miab_printer_offset" : [1, 0],
 
 	"miab_basestore_blueprint" : {
-		"boundingBoxSize" : [
-			154.0, 59.0
-		],
-		"liquidTable" : {
-		},
+		"boundingBoxSize" : [ 154.0, 59.0 ],
+		"liquidTable" : { },
 		"blocksTable" : {
 			"apexshipsupport" : 4,
 			"hazard" : 6,
@@ -164,393 +161,114 @@
 		"layoutTableForegroundMods" : {
 		},
 		"objectTable" : {
-			"32" : {
-				"128" : {
-					"jsonParameters" : {
-					},
-					"facing" : 1,
-					"name" : "shipT7.4apex"
-				},
-				"97" : {
-					"jsonParameters" : {
-					},
-					"facing" : -1,
-					"name" : "shipT7.3apex"
-				},
-				"86" : {
-					"jsonParameters" : {
-					},
-					"facing" : -1,
-					"name" : "shipT7.2apex"
-				},
-				"56" : {
-					"jsonParameters" : {
-					},
-					"facing" : 1,
-					"name" : "shipT7.1apex"
-				}
+			"32" : {  
+                "128" : {  "jsonParameters" : {  },  "facing" : 1,  "name" : "shipT7.4apex"  },  
+                "97" : {  "jsonParameters" : {  },  "facing" : -1,  "name" : "shipT7.3apex"  },  
+                "86" : {  "jsonParameters" : {  },  "facing" : -1,  "name" : "shipT7.2apex"  },  
+                "56" : {  "jsonParameters" : {  },  "facing" : 1,  "name" : "shipT7.1apex"  }
 			},
-			"33" : {
-				"144" : {
-					"jsonParameters" : {
-					},
-					"facing" : 1,
-					"name" : "apexshiplight"
-				}
+			"33" : {  
+                "144" : {  "jsonParameters" : {  },  "facing" : 1,  "name" : "apexshiplight"  }
 			},
-			"35" : {
-				"82" : {
-					"jsonParameters" : {
-					},
-					"facing" : 1,
-					"name" : "apexshiplight"
-				},
-				"51" : {
-					"jsonParameters" : {
-					},
-					"facing" : 1,
-					"name" : "apexshiplight"
-				},
-				"68" : {
-					"jsonParameters" : {
-					},
-					"facing" : 1,
-					"name" : "apexshiplight"
-				},
-				"102" : {
-					"jsonParameters" : {
-					},
-					"facing" : 1,
-					"name" : "apexshiplight"
-				},
-				"116" : {
-					"jsonParameters" : {
-					},
-					"facing" : 1,
-					"name" : "apexshiplight"
-				}
+			"35" : {  
+                "82" : {  "jsonParameters" : {  },  "facing" : 1,  "name" : "apexshiplight"  },  
+                "51" : {  "jsonParameters" : {  },  "facing" : 1,  "name" : "apexshiplight"  },  
+                "68" : {  "jsonParameters" : {  },  "facing" : 1,  "name" : "apexshiplight"  },  
+                "102" : {  "jsonParameters" : {  },  "facing" : 1,  "name" : "apexshiplight"  },   
+                "116" : {  "jsonParameters" : {  },  "facing" : 1,  "name" : "apexshiplight"  }
 			},
-			"37" : {
-				"71" : {
-					"jsonParameters" : {
-					},
-					"facing" : -1,
-					"name" : "apexshiphatch"
-				},
-				"107" : {
-					"jsonParameters" : {
-					},
-					"facing" : 1,
-					"name" : "apexshiphatch"
-				}
+			"37" : {  
+                "71" : {  "jsonParameters" : {  },  "facing" : -1,  "name" : "apexshiphatch"  },  
+                "107" : {  "jsonParameters" : {  },  "facing" : 1,  "name" : "apexshiphatch"  }
 			},
-			"38" : {
-				"118" : {
-					"jsonParameters" : {
-					},
-					"facing" : 1,
-					"name" : "apexshipdoor"
-				},
-				"87" : {
-					"jsonParameters" : {
-					},
-					"facing" : -1,
-					"name" : "apexshipdoor"
-				}
+			"38" : {  
+                "118" : {  "jsonParameters" : {  },  "facing" : 1,  "name" : "apexshipdoor"  },  
+                "87" : {  "jsonParameters" : {  },  "facing" : -1,  "name" : "apexshipdoor"  }
 			},
-			"7" : {
-				"102" : {
-					"jsonParameters" : {
-					},
-					"facing" : 1,
-					"name" : "apexshipdoor"
-				}
+			"7" : {  
+                "102" : {  "jsonParameters" : {  },  "facing" : 1,  "name" : "apexshipdoor"  }
 			},
-			"9" : {
-				"68" : {
-					"jsonParameters" : {
-					},
-					"facing" : -1,
-					"name" : "smallboosterflame"
-				}
+			"9" : {  
+                "68" : {  "jsonParameters" : {  },  "facing" : -1,  "name" : "smallboosterflame"  }
 			},
-			"42" : {
-				"123" : {
-					"jsonParameters" : {
-					},
-					"facing" : 1,
-					"name" : "apexshiplight"
-				}
+			"42" : {  
+                "123" : {  "jsonParameters" : {  },  "facing" : 1,  "name" : "apexshiplight"  }
 			},
-			"11" : {
-				"76" : {
-					"jsonParameters" : {
-					},
-					"facing" : 1,
-					"name" : "apexshiplight"
-				},
-				"97" : {
-					"jsonParameters" : {
-					},
-					"facing" : 1,
-					"name" : "apexshiplight"
-				},
-				"107" : {
-					"jsonParameters" : {
-					},
-					"facing" : 1,
-					"name" : "apexshiplight"
-				}
+			"11" : {  
+                "76" : {  "jsonParameters" : {  },  "facing" : 1,  "name" : "apexshiplight"  },  
+                "97" : {  "jsonParameters" : {  },  "facing" : 1,  "name" : "apexshiplight"  },  
+                "107" : {  "jsonParameters" : {  },  "facing" : 1,  "name" : "apexshiplight"  }
 			},
-			"13" : {
-				"94" : {
-					"jsonParameters" : {
-					},
-					"facing" : 1,
-					"name" : "apexshiphatch"
-				},
-				"79" : {
-					"jsonParameters" : {
-					},
-					"facing" : 1,
-					"name" : "apexshiphatch"
-				}
+			"13" : {  
+                "94" : {  "jsonParameters" : {  },  "facing" : 1,  "name" : "apexshiphatch"  },  
+                "79" : {  "jsonParameters" : {  },  "facing" : 1,  "name" : "apexshiphatch"  }
 			},
-			"46" : {
-				"44" : {
-					"jsonParameters" : {
-					},
-					"facing" : 1,
-					"name" : "boosterflameapex"
-				}
+			"46" : {  
+                "44" : {  "jsonParameters" : {  },  "facing" : 1,  "name" : "boosterflameapex"  }
 			},
-			"47" : {
-				"61" : {
-					"jsonParameters" : {
-					},
-					"facing" : 1,
-					"name" : "apexshiplight"
-				},
-				"113" : {
-					"jsonParameters" : {
-					},
-					"facing" : 1,
-					"name" : "apexshiplight"
-				},
-				"99" : {
-					"jsonParameters" : {
-					},
-					"facing" : 1,
-					"name" : "apexshiplight"
-				},
-				"75" : {
-					"jsonParameters" : {
-					},
-					"facing" : 1,
-					"name" : "apexshiplight"
-				}
+			"47" : {  
+                "61" : {  "jsonParameters" : {  },  "facing" : 1,  "name" : "apexshiplight"  },  
+                "113" : {  "jsonParameters" : {  },  "facing" : 1,  "name" : "apexshiplight"  },  
+                "99" : {  "jsonParameters" : {  },  "facing" : 1,  "name" : "apexshiplight"  },  
+                "75" : {  "jsonParameters" : {  },  "facing" : 1,  "name" : "apexshiplight"  }
 			},
-			"16" : {
-				"44" : {
-					"jsonParameters" : {
-					},
-					"facing" : 1,
-					"name" : "boosterflameapex3"
-				}
+			"16" : {  
+                "44" : {  "jsonParameters" : {  },  "facing" : 1,  "name" : "boosterflameapex3"  }
 			},
-			"49" : {
-				"94" : {
-					"jsonParameters" : {
-					},
-					"facing" : 1,
-					"name" : "apexshiphatch"
-				},
-				"79" : {
-					"jsonParameters" : {
-					},
-					"facing" : 1,
-					"name" : "apexshiphatch"
-				}
+			"49" : {  
+                "94" : {  "jsonParameters" : {  },  "facing" : 1,  "name" : "apexshiphatch"  },     
+                "79" : {  "jsonParameters" : {  },  "facing" : 1,  "name" : "apexshiphatch"  }
 			},
-			"50" : {
-				"102" : {
-					"jsonParameters" : {
-					},
-					"facing" : -1,
-					"name" : "apexshipdoor"
-				}
+			"50" : {  
+                "102" : {  "jsonParameters" : {  },  "facing" : -1,  "name" : "apexshipdoor"  }
 			},
-			"19" : {
-				"118" : {
-					"jsonParameters" : {
-					},
-					"facing" : 1,
-					"name" : "apexshipdoor"
-				}
+			"19" : {  
+                "118" : {  "jsonParameters" : {  },  "facing" : 1,  "name" : "apexshipdoor"  }
 			},
-			"21" : {
-				"130" : {
-					"jsonParameters" : {
-					},
-					"facing" : -1,
-					"name" : "smallboosterflame"
-				},
-				"53" : {
-					"jsonParameters" : {
-					},
-					"facing" : -1,
-					"name" : "smallboosterflame"
-				}
+			"21" : {  
+                "130" : {  "jsonParameters" : {  },  "facing" : -1,  "name" : "smallboosterflame"  },  
+                "53" : {  "jsonParameters" : {  },  "facing" : -1,  "name" : "smallboosterflame"  }
 			},
-			"54" : {
-				"107" : {
-					"jsonParameters" : {
-					},
-					"facing" : 1,
-					"name" : "apexshiplight"
-				}
+			"54" : {  
+                "107" : {  "jsonParameters" : {  },  "facing" : 1,  "name" : "apexshiplight"  }
 			},
-			"23" : {
-				"113" : {
-					"jsonParameters" : {
-					},
-					"facing" : 1,
-					"name" : "apexshiplight"
-				},
-				"75" : {
-					"jsonParameters" : {
-					},
-					"facing" : 1,
-					"name" : "apexshiplight"
-				},
-				"61" : {
-					"jsonParameters" : {
-					},
-					"facing" : 1,
-					"name" : "apexshiplight"
-				},
-				"123" : {
-					"jsonParameters" : {
-					},
-					"facing" : 1,
-					"name" : "apexshiplight"
-				},
-				"99" : {
-					"jsonParameters" : {
-					},
-					"facing" : 1,
-					"name" : "apexshiplight"
-				}
+			"23" : {  
+                "113" : {  "jsonParameters" : {  },  "facing" : 1,  "name" : "apexshiplight"  },  
+                "75" : {  "jsonParameters" : {  },  "facing" : 1,  "name" : "apexshiplight"  },  
+                "61" : {  "jsonParameters" : {  },  "facing" : 1,  "name" : "apexshiplight"  },  
+                "123" : {  "jsonParameters" : {  },  "facing" : 1,  "name" : "apexshiplight"  },  
+                "99" : {  "jsonParameters" : {  },  "facing" : 1,  "name" : "apexshiplight"  }
 			},
-			"10" : {
-				"114" : {
-					"jsonParameters" : {
-					},
-					"facing" : -1,
-					"name" : "smallboosterflame"
-				}
+			"10" : {  
+                "114" : {  "jsonParameters" : {  },  "facing" : -1,  "name" : "smallboosterflame"  }
 			},
-			"25" : {
-				"71" : {
-					"jsonParameters" : {
-					},
-					"facing" : 1,
-					"name" : "apexshiphatch"
-				},
-				"107" : {
-					"jsonParameters" : {
-					},
-					"facing" : 1,
-					"name" : "apexshiphatch"
-				}
+			"25" : {  
+                "71" : {  "jsonParameters" : {  },  "facing" : 1,  "name" : "apexshiphatch"  },  
+                "107" : {  "jsonParameters" : {  },  "facing" : 1,  "name" : "apexshiphatch"  }
 			},
-			"26" : {
-				"128" : {
-					"jsonParameters" : {
-					},
-					"facing" : -1,
-					"name" : "apexshipdoor"
-				},
-				"97" : {
-					"jsonParameters" : {
-					},
-					"facing" : -1,
-					"name" : "apexshipdoor"
-				},
-				"147" : {
-					"jsonParameters" : {
-					},
-					"facing" : 1,
-					"name" : "apexcaptainschair"
-				},
-				"56" : {
-					"jsonParameters" : {
-					},
-					"facing" : -1,
-					"name" : "apexshipdoor"
-				},
-				"87" : {
-					"jsonParameters" : {
-					},
-					"facing" : 1,
-					"name" : "apexshipdoor"
-				}
+			"26" : {  
+                "128" : {  "jsonParameters" : {  },  "facing" : -1,  "name" : "apexshipdoor"  },  
+                "97" : {  "jsonParameters" : {  },  "facing" : -1,  "name" : "apexshipdoor"  },  
+                "147" : {  "jsonParameters" : {  },  "facing" : 1,  "name" : "apexcaptainschair"  },  
+                "56" : {  "jsonParameters" : {  },  "facing" : -1,  "name" : "apexshipdoor"  },  
+                "87" : {  "jsonParameters" : {  },  "facing" : 1,  "name" : "apexshipdoor"  }
 			},
-			"59" : {
-				"90" : {
-					"jsonParameters" : {
-					},
-					"facing" : 1,
-					"name" : "apexshiplight"
-				},
-				"76" : {
-					"jsonParameters" : {
-					},
-					"facing" : 1,
-					"name" : "apexshiplight"
-				}
+			"59" : {  
+                "90" : {  "jsonParameters" : {  },  "facing" : 1,  "name" : "apexshiplight"  },  
+                "76" : {  "jsonParameters" : {  },  "facing" : 1,  "name" : "apexshiplight"  }
 			},
-			"28" : {
-				"102" : {
-					"contents" : {
-					},
-					"jsonParameters" : {
-					},
-					"facing" : -1,
-					"name" : "apexshiplocker"
-				},
-				"139" : {
-					"jsonParameters" : {
-					},
-					"facing" : 1,
-					"name" : "techstation"
-				}
+			"28" : {  
+                "102" : {  "contents" : {  },  "jsonParameters" : {  },  "facing" : -1,  "name" : "apexshiplocker"  },  
+                "139" : {  "jsonParameters" : {  },  "facing" : 1,  "name" : "techstation"  }
 			},
-			"29" : {
-				"131" : {
-					"contents" : {
-					},
-					"jsonParameters" : {
-					},
-					"facing" : -1,
-					"name" : "apexfuelhatch"
-				}
+			"29" : {  
+                "131" : {  "contents" : {  },  "jsonParameters" : {  },  "facing" : -1,  "name" : "apexfuelhatch"  }
 			},
-			"14" : {
-				"87" : {
-					"jsonParameters" : {
-					},
-					"facing" : 1,
-					"name" : "apexshipdoor"
-				}
+			"14" : {  
+                "87" : {  "jsonParameters" : {  },  "facing" : 1,  "name" : "apexshipdoor"  }
 			},
-			"31" : {
-				"35" : {
-					"jsonParameters" : {
-					},
-					"facing" : 1,
-					"name" : "boosterflameapex2"
-				}
+			"31" : {  
+                "35" : {  "jsonParameters" : {  },  "facing" : 1,  "name" : "boosterflameapex2"  }
 			}
 		}
 	}
