@@ -3,27 +3,9 @@
     "op": "remove",
     "path": "/orientations/0/anchors"
   },
-
   {
     "op": "add",
     "path": "/health",
     "value": 1000
-  },
-
-  {
-    "op": "remove",
-    "path": "/orientations/0/spaceScan"
-  },
-
-  {
-    "op": "replace",
-    "path": "/orientations/0/collision",
-    "value": "platform"
-  },
-
-  {
-    "op": "add",
-    "path": "/orientations/0/renderLayer",
-    "value": "Object-5"
   }
 ]
