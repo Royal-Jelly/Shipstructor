@@ -6,14 +6,8 @@ function myClearModdedBlocks()
         for _x = bl[1], tr[1], 1 do
             local y = tostring(math.floor(_y - bl[2]))
             local x = tostring(math.floor(_x - bl[1]))
-			if (blueprint.layoutTableForeground ~= nil and
- 				blueprint.layoutTableForeground[__y] ~= nil and
- 				blueprint.layoutTableForeground[__y][__x] ~= nil and
- 				blueprint.layoutTableForeground[__y][__x] > 0) then breakBlock({_x, _y}, "foreground") end
- 			if (blueprint.layoutTableForeground ~= nil and
- 				blueprint.layoutTableBackground[__y] ~= nil and
- 				blueprint.layoutTableBackground[__y][__x] ~= nil and
- 				blueprint.layoutTableBackground[__y][__x] > 0) then breakBlock({_x, _y}, "background") end
+			breakBlock({_x, _y}, "foreground")
+			breakBlock({_x, _y}, "background")
         end
     end
 
@@ -194,14 +188,8 @@ function myClearArea()
         for _x = bl[1], tr[1], 1 do
             local y = tostring(math.floor(_y - bl[2]))
             local x = tostring(math.floor(_x - bl[1]))
-			if (blueprint.layoutTableForeground ~= nil and
- 				blueprint.layoutTableForeground[__y] ~= nil and
- 				blueprint.layoutTableForeground[__y][__x] ~= nil and
- 				blueprint.layoutTableForeground[__y][__x] > 0) then breakBlock({_x, _y}, "foreground") end
- 			if (blueprint.layoutTableForeground ~= nil and
- 				blueprint.layoutTableBackground[__y] ~= nil and
- 				blueprint.layoutTableBackground[__y][__x] ~= nil and
- 				blueprint.layoutTableBackground[__y][__x] > 0) then breakBlock({_x, _y}, "background") end
+			breakBlock({_x, _y}, "foreground")
+			breakBlock({_x, _y}, "background")
         end
     end
 
@@ -326,9 +314,7 @@ function update(dt)
 			self.miab.readingStage = READSUCCESS
 		elseif (self.miab.readingStage == READSUCCESS) then
 			-- TODO: Check for self.
-
 			self.miab = nil -- reset scanner state
-
 			-- \/ This can be used to spawn an item with blueprint :D!
 			self.scaned_configTable = blueprint.toConfigTable() -- save scanned table
 			blueprint.Init({0, 0}) -- reset blueprint
