@@ -3,10 +3,10 @@
     "money" : 3000
   },
   "input" : [
-    { "item" : "upgrademodule", "count" : 1 }
+    { "item" : "upgrademodule", "count" : 10 }
   ],
   "output" : {
-    "item" : "apexT3shipcontroller",
+    "item" : "apexT8module",
     "count" : 1
   },
   "groups" : [ "penguinbay" ]

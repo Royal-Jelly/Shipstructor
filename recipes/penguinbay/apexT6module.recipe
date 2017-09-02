@@ -1,0 +1,13 @@
+{
+  "currencyInputs" : {
+    "money" : 3000
+  },
+  "input" : [
+    { "item" : "upgrademodule", "count" : 6 }
+  ],
+  "output" : {
+    "item" : "apexT6module",
+    "count" : 1
+  },
+  "groups" : [ "penguinbay" ]
+}
