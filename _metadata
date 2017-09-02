@@ -1,7 +1,7 @@
 {
   "author" : "Royal~Jelly",
   "name" : "shipstructor",
-  "description" : "***Disclaimer: We are not responsible for this mod eating your ship.*** /nThis mod Aims to: /n(1) Create a framework for players to blueprint and swap out Starships. /n(2) Re-Impliment all Vanilla Ships for use by any race in the base game, this means no moded races for now. /n(3) Create and simple way to upload and share blueprints.
+  "description" : "***Disclaimer: We are not responsible for this mod eating your ship.*** /nThis mod Aims to: /n(1) Create a framework for players to blueprint and swap out Starships. /n(2) Re-Impliment all Vanilla Ships for use by any race in the base game, this means no moded races for now. /n(3) Create and simple way to upload and share blueprints.",
   "friendlyName" : "Shipstructor",
   "includes" : ["modules-in-a-box"],
   "requires" : ["modules-in-a-box"],
