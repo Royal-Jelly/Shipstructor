@@ -1,3 +1,4 @@
 [
-	{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"fakelicense5"} }
+	{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"fakelicense5"} },
+	{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"buildermodule"} }
 ]
