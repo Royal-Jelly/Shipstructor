@@ -7,7 +7,7 @@
   "shortdescription" : "Developers Ship Module",
   "twoHanded" : true,
   "maxStack" : 1,
-  "itemTags" : ["nanitemodule"],
+  "itemTags" : ["shipmodule"],
 
   "inventoryIcon" : "nanitemodule.png",
 
