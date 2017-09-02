@@ -3,7 +3,7 @@
   "price" : 3000,
   "rarity" : "Essential",
   "category" : "upgradeComponent",
-  "description" : "A Nanite Module, stores a playermade ship's blueprint.",
+  "description" : "A Nanite Module, blueprint's a ship from using nanites.",
   "shortdescription" : "Blueprint Module",
   "twoHanded" : true,
   "maxStack" : 1,

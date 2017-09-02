@@ -20,11 +20,8 @@
 	"miab_printer_offset" : [1, 0],
 
 	"miab_basestore_blueprint" : {
-		"boundingBoxSize" : [
-			21.0, 15.0
-		],
-		"liquidTable" : {
-		},
+		"boundingBoxSize" : [ 21.0, 15.0 ],
+		"liquidTable" : { },
 		"blocksTable" : {
 			"hazard" : 3,
 			"miab_scaffold" : 1,
