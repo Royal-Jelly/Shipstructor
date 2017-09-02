@@ -9,7 +9,7 @@
   "maxStack" : 1,
   "itemTags" : ["shipmodule"],
 
-  "inventoryIcon" : "apexcontroller.png",
+  "inventoryIcon" : "apexmodule.png",
 
   // MIAB SETTINGS -- [left, bottom, right, top]
 	"miab_breakStuff" : true,

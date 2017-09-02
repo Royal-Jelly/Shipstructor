@@ -9,7 +9,7 @@
   "maxStack" : 1,
   "itemTags" : ["shipmodule"],
 
-  "inventoryIcon" : "apexcontroller.png",
+  "inventoryIcon" : "apexmodule.png",
 
   // MIAB SETTINGS -- [left, bottom, right, top]
 	"miab_breakStuff" : true,
@@ -20,11 +20,8 @@
 	"miab_printer_offset" : [1, 0],
 
 	"miab_basestore_blueprint" : {
-		"boundingBoxSize" : [
-			153.0, 39.0
-		],
-		"liquidTable" : {
-		},
+		"boundingBoxSize" : [ 153.0, 39.0 ],
+		"liquidTable" : { },
 		"blocksTable" : {
 			"miab_scaffold" : 1,
 			"shipwindow" : 7,
