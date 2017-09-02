@@ -1,7 +1,0 @@
-[
-	{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"florancaptainschair"} },
-	{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"floranfuelhatch"} },
-	{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"floranshipdoor"} },
-	{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"floranshiplocker"} },
-	{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"florantechstation"} }
-]

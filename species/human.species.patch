@@ -1,7 +1,0 @@
-[
-	{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"humancaptainschair"} },
-	{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"humanfuelhatch"} },
-	{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"humanshipdoor"} },
-	{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"humanshiplocker"} },
-	{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"humantechstation"} }
-]

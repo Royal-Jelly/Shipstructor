@@ -1,7 +1,0 @@
-[	
-	{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"aviancaptainschair"} },
-	{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"avianfuelhatch"} },
-	{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"avianshipdoor"} },
-	{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"avianshiplocker"} },
-	{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"aviantechstation"} }
-]

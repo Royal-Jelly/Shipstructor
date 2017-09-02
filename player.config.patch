@@ -1,4 +1,61 @@
 [
+// Generic Items & Unlockers
 	{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"fakelicense5"} },
-	{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"buildermodule"} }
+	{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"buildermodule"} },
+
+// Apex
+	{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"apexT3shipcontroller"} },
+	{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"apexT4shipcontroller"} },
+	{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"apexT5shipcontroller"} },
+	{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"apexT6shipcontroller"} },
+	{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"apexT7shipcontroller"} },
+	{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"apexT8shipcontroller"} },
+
+	{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"apexcaptainschair"} },
+	{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"apexfuelhatch"} },
+	{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"apexshipdoor"} },
+	{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"apexshiplocker"} },
+	{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"techstation"} },
+
+// Avian
+	{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"aviancaptainschair"} },
+	{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"avianfuelhatch"} },
+	{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"avianshipdoor"} },
+	{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"avianshiplocker"} },
+	{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"aviantechstation"} },
+
+// Floran
+	{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"florancaptainschair"} },
+	{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"floranfuelhatch"} },
+	{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"floranshipdoor"} },
+	{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"floranshiplocker"} },
+	{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"florantechstation"} },
+
+// Glitch
+	{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"glitchcaptainschair"} },
+	{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"glitchfuelhatch"} },
+	{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"glitchshipdoor"} },
+	{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"glitchshiplocker"} },
+	{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"glitchtechstation"} },
+
+// Human
+	{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"humancaptainschair"} },
+	{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"humanfuelhatch"} },
+	{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"humanshipdoor"} },
+	{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"humanshiplocker"} },
+	{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"humantechstation"} },
+
+// Hylotl
+	{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"hylotlcaptainschair"} },
+	{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"hylotlfuelhatch"} },
+	{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"hylotlshipdoor"} },
+	{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"hylotlshiplocker"} },
+	{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"hylotltechstation"} },
+
+// Novakid
+	{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"novakidcaptainschair"} },
+	{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"novakidfuelhatch"} },
+	{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"novakidshipdoor"} },
+	{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"novakidshiplocker"} },
+	{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"novakidtechstation"} }
 ]

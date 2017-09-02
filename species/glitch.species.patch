@@ -1,7 +1,0 @@
-[
-	{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"glitchcaptainschair"} },
-	{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"glitchfuelhatch"} },
-	{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"glitchshipdoor"} },
-	{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"glitchshiplocker"} },
-	{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"glitchtechstation"} }
-]

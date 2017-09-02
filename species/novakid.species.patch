@@ -1,7 +1,0 @@
-[
-	{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"novakidcaptainschair"} },
-	{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"novakidfuelhatch"} },
-	{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"novakidshipdoor"} },
-	{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"novakidshiplocker"} },
-	{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"novakidtechstation"} }
-]

@@ -1,7 +1,0 @@
-[
-	{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"hylotlcaptainschair"} },
-	{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"hylotlfuelhatch"} },
-	{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"hylotlshipdoor"} },
-	{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"hylotlshiplocker"} },
-	{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"hylotltechstation"} }
-]
