@@ -1,13 +1,13 @@
 {
   "itemName" : "avianT6shipcontroller",
-  "price" : 120000,
+  "price" : 3000,
   "rarity" : "Rare",
-  "category" : "ShipController",
+  "category" : "upgradeComponent",
   "description" : "A Generic Nanite Controller, except a whole starship's blueprint is stored inside.",
   "shortdescription" : "Avian T6 Ship Controller",
   "twoHanded" : true,
   "maxStack" : 1,
-  "itemTags" : ["shipcontroller"],
+  "itemTags" : ["shipmodule"],
 
   "inventoryIcon" : "aviancontroller.png",
 

@@ -533,7 +533,7 @@ function toConfigTable()
 end
 
 function spawnShippodItem()
-world.spawnItem("storedshipcontroller", self.miab.spawnPrinterPosition, self.miab.printerCount, toConfigTable())
+world.spawnItem("blueprintmodule", self.miab.spawnPrinterPosition, self.miab.printerCount, toConfigTable())
 end
 
 
@@ -542,5 +542,5 @@ end
 -- @param itm The item to check
 -- @return true if the item is valid, false otherwise
 function validatePod(itm)
-	return root.itemHasTag(itm["name"], "shipcontroller")
+	return root.itemHasTag(itm["name"], "shipmodule")
 end

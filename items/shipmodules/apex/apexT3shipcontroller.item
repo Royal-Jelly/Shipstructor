@@ -2,16 +2,16 @@
   "itemName" : "apexT3shipcontroller",
   "price" : 3000,
   "rarity" : "Legendary",
-  "category" : "ShipController",
+  "category" : "upgradeComponent",
   "description" : "A Nanite Module, build yourself a whole ship from stored nanites.",
   "shortdescription" : "Apex T3 Ship Module",
   "twoHanded" : true,
   "maxStack" : 1,
-  "itemTags" : ["shipcontroller"],
+  "itemTags" : ["shipmodule"],
 
   "inventoryIcon" : "apexcontroller.png",
 
-  // MIAB SETTINGS
+  // MIAB SETTINGS -- [left, bottom, right, top]
 	"miab_breakStuff" : true,
 	"miab_dumpJSON" : false, 
 	"miab_fixed_area_to_scan_bounding_box" : [1006, 1018, 1075, 1035],

@@ -1,0 +1,13 @@
+{
+  "currencyInputs" : {
+    "money" : 10000
+  },
+  "input" : [
+    { "item" : "paper", "count" : 1 }
+  ],
+  "output" : {
+    "item" : "fakelicense5",
+    "count" : 1
+  },
+  "groups" : [ "penguinbay" ]
+}

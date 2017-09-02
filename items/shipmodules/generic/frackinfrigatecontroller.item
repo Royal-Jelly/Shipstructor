@@ -1,17 +1,17 @@
 {
   "itemName" : "frackinfrigatecontroller",
-  "price" : 25000,
+  "price" : 3000,
   "rarity" : "Rare",
-  "category" : "ShipController",
+  "category" : "upgradeComponent",
   "description" : "An Frackin Frigate which has been stord in a Nanite controller, can only be used with the ship tether.",
   "shortdescription" : "Frackin Frigate Controller",
   "twoHanded" : true,
   "maxStack" : 1,
-  "itemTags" : ["shipcontroller"],
+  "itemTags" : ["shipmodule"],
 
   "inventoryIcon" : "frackinfrigatecontroller.png",
 
-  // MIAB SETTINGS
+  // MIAB SETTINGS -- [left, bottom, right, top]
 	"miab_breakStuff" : false,
 	"miab_dumpJSON" : true, 
 	"miab_fixed_area_to_scan_bounding_box" : [970, 950, 1250, 1100],

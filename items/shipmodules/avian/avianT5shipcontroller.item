@@ -1,13 +1,13 @@
 {
   "itemName" : "avianT5shipcontroller",
-  "price" : 60000,
+  "price" : 3000,
   "rarity" : "Rare",
-  "category" : "ShipController",
+  "category" : "upgradeComponent",
   "description" : "A Generic Nanite Controller, except a whole starship's blueprint is stored inside.",
   "shortdescription" : "Avian T5 Ship Controller",
   "twoHanded" : true,
   "maxStack" : 1,
-  "itemTags" : ["shipcontroller"],
+  "itemTags" : ["shipmodule"],
 
   "inventoryIcon" : "aviancontroller.png",
 

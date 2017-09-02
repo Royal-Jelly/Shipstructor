@@ -1,17 +1,17 @@
 {
   "itemName" : "glitchT5shipcontroller",
-  "price" : 60000,
+  "price" : 3000,
   "rarity" : "Rare",
-  "category" : "ShipController",
+  "category" : "upgradeComponent",
   "description" : "A Generic Nanite Controller, except a whole starship's blueprint is stored inside.",
   "shortdescription" : "Glitch T5 Ship Controller",
   "twoHanded" : true,
   "maxStack" : 1,
-  "itemTags" : ["shipcontroller"],
+  "itemTags" : ["shipmodule"],
 
   "inventoryIcon" : "glitchcontroller.png",
 
-  // MIAB SETTINGS
+  // MIAB SETTINGS -- [left, bottom, right, top]
 	"miab_breakStuff" : true,
 	"miab_dumpJSON" : false, 
 	"miab_fixed_area_to_scan_bounding_box" : [1006, 1018, 1075, 1035],

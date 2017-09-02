@@ -1,9 +1,4 @@
-[
-  // Shipstructor
-
-	//{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"apexshiplight"} },
-  //{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"apexquestconsole"} },
-		
+[	
 	{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"apexT3shipcontroller"} },
 	{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"apexT4shipcontroller"} },
 	{"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"apexT5shipcontroller"} },

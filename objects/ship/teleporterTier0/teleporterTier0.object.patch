@@ -4,13 +4,28 @@
     "path": "/shortdescription",
 	"value": "Apex Teleporter Broken"
   },
+
   {
     "op": "remove",
     "path": "/orientations/0/anchors"
   },
+
+
+  {
+    "op": "remove",
+    "path": "/orientations/0/spaceScan"
+  },
+
+
   {
     "op": "add",
     "path": "/health",
     "value": 1000
+  },
+  
+  {
+    "op": "add",
+    "path": "/orientations/0/renderLayer",
+    "value": "Object-5"
   }
 ]
