@@ -77,112 +77,33 @@
 		},
 		"objectTable" : {
 			"1" : {
-				"48" : {
-					"name" : "smallboosterflame",
-					"facing" : -1,
-					"jsonParameters" : {
-					}
-				},
-				"25" : {
-					"name" : "smallboosterflame",
-					"facing" : -1,
-					"jsonParameters" : {
-					}
-				},
-				"37" : {
-					"name" : "smallboosterflame",
-					"facing" : -1,
-					"jsonParameters" : {
-					}
-				}
+				"48" : {"name" : "smallboosterflame","facing" : -1,"jsonParameters" : {} },
+				"25" : {"name" : "smallboosterflame","facing" : -1,"jsonParameters" : {} },
+				"37" : {"name" : "smallboosterflame","facing" : -1,"jsonParameters" : {} }
 			},
 			"8" : {
-				"28" : {
-					"name" : "avianshiplocker",
-					"facing" : -1,
-					"jsonParameters" : {
-					},
-					"contents" : {
-					}
-				},
-				"49" : {
-					"name" : "aviantechstation",
-					"facing" : -1,
-					"jsonParameters" : {
-					}
-				}
+				"28" : {"name" : "avianshiplocker","facing" : -1,"jsonParameters" : {},"contents" : {} },
+				"49" : {"name" : "aviantechstation","facing" : -1,"jsonParameters" : {} }
 			},
 			"9" : {
-				"57" : {
-					"name" : "avianfuelhatch",
-					"facing" : -1,
-					"jsonParameters" : {
-					},
-					"contents" : {
-					}
-				}
+				"57" : {"name" : "avianfuelhatch","facing" : -1,"jsonParameters" : {},"contents" : {} }
 			},
 			"12" : {
-				"54" : {
-					"name" : "shipT3avian",
-					"facing" : -1,
-					"jsonParameters" : {
-					}
-				}
+				"54" : {"name" : "shipT3avian","facing" : -1,"jsonParameters" : {} }
 			},
 			"14" : {
-				"1" : {
-					"name" : "boosterflame",
-					"facing" : 1,
-					"jsonParameters" : {
-					}
-				}
+				"1" : {"name" : "boosterflame","facing" : 1,"jsonParameters" : {} }
 			},
 			"6" : {
-				"61" : {
-					"name" : "aviancaptainschair",
-					"facing" : 1,
-					"jsonParameters" : {
-					}
-				},
-				"54" : {
-					"name" : "avianshipdoor",
-					"facing" : 1,
-					"jsonParameters" : {
-					}
-				},
-				"23" : {
-					"name" : "avianshipdoor",
-					"facing" : -1,
-					"jsonParameters" : {
-					}
-				}
+				"61" : {"name" : "aviancaptainschair","facing" : 1,"jsonParameters" : {} },
+				"54" : {"name" : "avianshipdoor","facing" : 1,"jsonParameters" : {} },
+				"23" : {"name" : "avianshipdoor","facing" : -1,"jsonParameters" : {} }
 			},
 			"15" : {
-				"28" : {
-					"name" : "apexshiplight",
-					"facing" : 1,
-					"jsonParameters" : {
-					}
-				},
-				"49" : {
-					"name" : "apexshiplight",
-					"facing" : 1,
-					"jsonParameters" : {
-					}
-				},
-				"42" : {
-					"name" : "apexshiplight",
-					"facing" : 1,
-					"jsonParameters" : {
-					}
-				},
-				"35" : {
-					"name" : "apexshiplight",
-					"facing" : 1,
-					"jsonParameters" : {
-					}
-				}
+				"28" : {"name" : "apexshiplight","facing" : 1,"jsonParameters" : {} },
+				"49" : {"name" : "apexshiplight","facing" : 1,"jsonParameters" : {} },
+				"42" : {"name" : "apexshiplight","facing" : 1,"jsonParameters" : {} },
+				"35" : {"name" : "apexshiplight","facing" : 1,"jsonParameters" : {} }
 			}
 		}
 	}

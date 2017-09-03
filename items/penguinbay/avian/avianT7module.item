@@ -129,378 +129,89 @@
 		},
 		"objectTable" : {
 			"1" : {
-				"64" : {
-					"name" : "smallboosterflamehuman2",
-					"jsonParameters" : {
-					},
-					"facing" : 1
-				},
-				"147" : {
-					"name" : "smallboosterflame",
-					"jsonParameters" : {
-					},
-					"facing" : 1
-				},
-				"100" : {
-					"name" : "smallboosterflame",
-					"jsonParameters" : {
-					},
-					"facing" : 1
-				},
-				"88" : {
-					"name" : "smallboosterflame",
-					"jsonParameters" : {
-					},
-					"facing" : 1
-				},
-				"112" : {
-					"name" : "smallboosterflame",
-					"jsonParameters" : {
-					},
-					"facing" : -1
-				},
-				"40" : {
-					"name" : "smallboosterflamehuman2",
-					"jsonParameters" : {
-					},
-					"facing" : 1
-				},
-				"76" : {
-					"name" : "smallboosterflame",
-					"jsonParameters" : {
-					},
-					"facing" : 1
-				},
-				"124" : {
-					"name" : "smallboosterflame",
-					"jsonParameters" : {
-					},
-					"facing" : 1
-				},
-				"136" : {
-					"name" : "smallboosterflame",
-					"jsonParameters" : {
-					},
-					"facing" : -1
-				},
-				"52" : {
-					"name" : "smallboosterflamehuman2",
-					"jsonParameters" : {
-					},
-					"facing" : 1
-				}
+				"64" : {"name" : "smallboosterflamehuman2","jsonParameters" : {},"facing" : 1 },
+				"147" : {"name" : "smallboosterflame","jsonParameters" : {},"facing" : 1 },
+				"100" : {"name" : "smallboosterflame","jsonParameters" : {},"facing" : 1 },
+				"88" : {"name" : "smallboosterflame","jsonParameters" : {},"facing" : 1 },
+				"112" : {"name" : "smallboosterflame","jsonParameters" : {},"facing" : -1 },
+				"40" : {"name" : "smallboosterflamehuman2","jsonParameters" : {},"facing" : 1 },
+				"76" : {"name" : "smallboosterflame","jsonParameters" : {},"facing" : 1 },
+				"124" : {"name" : "smallboosterflame","jsonParameters" : {},"facing" : 1 },
+				"136" : {"name" : "smallboosterflame","jsonParameters" : {},"facing" : -1 },
+				"52" : {"name" : "smallboosterflamehuman2","jsonParameters" : {},"facing" : 1 }
 			},
 			"17" : {
-				"44" : {
-					"name" : "avianshiphatch",
-					"jsonParameters" : {
-					},
-					"facing" : 1
-				},
-				"85" : {
-					"name" : "avianshiphatch",
-					"jsonParameters" : {
-					},
-					"facing" : -1
-				},
-				"126" : {
-					"name" : "avianshiphatch",
-					"jsonParameters" : {
-					},
-					"facing" : 1
-				}
+				"44" : {"name" : "avianshiphatch","jsonParameters" : {},"facing" : 1 },
+				"85" : {"name" : "avianshiphatch","jsonParameters" : {},"facing" : -1 },
+				"126" : {"name" : "avianshiphatch","jsonParameters" : {},"facing" : 1 }
 			},
 			"18" : {
-				"132" : {
-					"name" : "avianshipdoor",
-					"jsonParameters" : {
-					},
-					"facing" : -1
-				},
-				"101" : {
-					"name" : "avianshipdoor",
-					"jsonParameters" : {
-					},
-					"facing" : -1
-				},
-				"70" : {
-					"name" : "avianshipdoor",
-					"jsonParameters" : {
-					},
-					"facing" : -1
-				},
-				"39" : {
-					"name" : "avianshipdoor",
-					"jsonParameters" : {
-					},
-					"facing" : -1
-				}
+				"132" : {"name" : "avianshipdoor","jsonParameters" : {},"facing" : -1 },
+				"101" : {"name" : "avianshipdoor","jsonParameters" : {},"facing" : -1 },
+				"70" : {"name" : "avianshipdoor","jsonParameters" : {},"facing" : -1 },
+				"39" : {"name" : "avianshipdoor","jsonParameters" : {},"facing" : -1 }
 			},
 			"37" : {
-				"120" : {
-					"name" : "apexshiplight",
-					"jsonParameters" : {
-					},
-					"facing" : 1
-				},
-				"113" : {
-					"name" : "apexshiplight",
-					"jsonParameters" : {
-					},
-					"facing" : 1
-				},
-				"58" : {
-					"name" : "apexshiplight",
-					"jsonParameters" : {
-					},
-					"facing" : 1
-				},
-				"51" : {
-					"name" : "apexshiplight",
-					"jsonParameters" : {
-					},
-					"facing" : 1
-				},
-				"106" : {
-					"name" : "apexshiplight",
-					"jsonParameters" : {
-					},
-					"facing" : 1
-				},
-				"127" : {
-					"name" : "apexshiplight",
-					"jsonParameters" : {
-					},
-					"facing" : 1
-				}
+				"120" : {"name" : "apexshiplight","jsonParameters" : {},"facing" : 1 },
+				"113" : {"name" : "apexshiplight","jsonParameters" : {},"facing" : 1 },
+				"58" : {"name" : "apexshiplight","jsonParameters" : {},"facing" : 1 },
+				"51" : {"name" : "apexshiplight","jsonParameters" : {},"facing" : 1 },
+				"106" : {"name" : "apexshiplight","jsonParameters" : {},"facing" : 1 },
+				"127" : {"name" : "apexshiplight","jsonParameters" : {},"facing" : 1 }
 			},
 			"6" : {
-				"161" : {
-					"name" : "aviancaptainschair",
-					"jsonParameters" : {
-					},
-					"facing" : 1
-				},
-				"142" : {
-					"name" : "avianshipdoor",
-					"jsonParameters" : {
-					},
-					"facing" : 1
-				},
-				"60" : {
-					"name" : "avianshipdoor",
-					"jsonParameters" : {
-					},
-					"facing" : 1
-				},
-				"101" : {
-					"name" : "avianshipdoor",
-					"jsonParameters" : {
-					},
-					"facing" : 1
-				},
-				"70" : {
-					"name" : "avianshipdoor",
-					"jsonParameters" : {
-					},
-					"facing" : -1
-				},
-				"111" : {
-					"name" : "avianshipdoor",
-					"jsonParameters" : {
-					},
-					"facing" : -1
-				}
+				"161" : {"name" : "aviancaptainschair","jsonParameters" : {},"facing" : 1 },
+				"142" : {"name" : "avianshipdoor","jsonParameters" : {},"facing" : 1 },
+				"60" : {"name" : "avianshipdoor","jsonParameters" : {},"facing" : 1 },
+				"101" : {"name" : "avianshipdoor","jsonParameters" : {},"facing" : 1 },
+				"70" : {"name" : "avianshipdoor","jsonParameters" : {},"facing" : -1 },
+				"111" : {"name" : "avianshipdoor","jsonParameters" : {},"facing" : -1 }
 			},
 			"25" : {
-				"6" : {
-					"name" : "bigboosterflameavian",
-					"jsonParameters" : {
-					},
-					"facing" : 1
-				}
+				"6" : {"name" : "bigboosterflameavian","jsonParameters" : {},"facing" : 1 }
 			},
 			"24" : {
-				"34" : {
-					"name" : "apexshiplight",
-					"jsonParameters" : {
-					},
-					"facing" : 1
-				},
-				"137" : {
-					"name" : "apexshiplight",
-					"jsonParameters" : {
-					},
-					"facing" : 1
-				}
+				"34" : {"name" : "apexshiplight","jsonParameters" : {},"facing" : 1 },
+				"137" : {"name" : "apexshiplight","jsonParameters" : {},"facing" : 1 }
 			},
 			"9" : {
-				"145" : {
-					"name" : "avianfuelhatch",
-					"jsonParameters" : {
-					},
-					"facing" : -1,
-					"contents" : {
-					}
-				}
+				"145" : {"name" : "avianfuelhatch","jsonParameters" : {},"facing" : -1,"contents" : {} }
 			},
 			"8" : {
-				"116" : {
-					"name" : "avianshiplocker",
-					"jsonParameters" : {
-					},
-					"facing" : -1,
-					"contents" : {
-					}
-				},
-				"137" : {
-					"name" : "aviantechstation",
-					"jsonParameters" : {
-					},
-					"facing" : -1
-				}
+				"116" : {"name" : "avianshiplocker","jsonParameters" : {},"facing" : -1,"contents" : {} },
+				"137" : {"name" : "aviantechstation","jsonParameters" : {},"facing" : -1 }
 			},
 			"27" : {
-				"96" : {
-					"name" : "apexshiplight",
-					"jsonParameters" : {
-					},
-					"facing" : 1
-				},
-				"89" : {
-					"name" : "apexshiplight",
-					"jsonParameters" : {
-					},
-					"facing" : 1
-				},
-				"82" : {
-					"name" : "apexshiplight",
-					"jsonParameters" : {
-					},
-					"facing" : 1
-				},
-				"75" : {
-					"name" : "apexshiplight",
-					"jsonParameters" : {
-					},
-					"facing" : 1
-				}
+				"96" : {"name" : "apexshiplight","jsonParameters" : {},"facing" : 1 },
+				"89" : {"name" : "apexshiplight","jsonParameters" : {},"facing" : 1 },
+				"82" : {"name" : "apexshiplight","jsonParameters" : {},"facing" : 1 },
+				"75" : {"name" : "apexshiplight","jsonParameters" : {},"facing" : 1 }
 			},
 			"12" : {
-				"60" : {
-					"name" : "shipT7.1avian",
-					"jsonParameters" : {
-					},
-					"facing" : -1
-				},
-				"101" : {
-					"name" : "shipT7.2avian",
-					"jsonParameters" : {
-					},
-					"facing" : 1
-				},
-				"142" : {
-					"name" : "shipT7.3avian",
-					"jsonParameters" : {
-					},
-					"facing" : 1
-				}
+				"60" : {"name" : "shipT7.1avian","jsonParameters" : {},"facing" : -1 },
+				"101" : {"name" : "shipT7.2avian","jsonParameters" : {},"facing" : 1 },
+				"142" : {"name" : "shipT7.3avian","jsonParameters" : {},"facing" : 1 }
 			},
 			"11" : {
-				"159" : {
-					"name" : "apexshiplight",
-					"jsonParameters" : {
-					},
-					"facing" : 1
-				}
+				"159" : {"name" : "apexshiplight","jsonParameters" : {},"facing" : 1 }
 			},
 			"14" : {
-				"7" : {
-					"name" : "boosterflame",
-					"jsonParameters" : {
-					},
-					"facing" : 1
-				}
+				"7" : {"name" : "boosterflame","jsonParameters" : {},"facing" : 1 }
 			},
 			"15" : {
-				"96" : {
-					"name" : "apexshiplight",
-					"jsonParameters" : {
-					},
-					"facing" : 1
-				},
-				"65" : {
-					"name" : "apexshiplight",
-					"jsonParameters" : {
-					},
-					"facing" : 1
-				},
-				"82" : {
-					"name" : "apexshiplight",
-					"jsonParameters" : {
-					},
-					"facing" : 1
-				},
-				"116" : {
-					"name" : "apexshiplight",
-					"jsonParameters" : {
-					},
-					"facing" : 1
-				},
-				"55" : {
-					"name" : "apexshiplight",
-					"jsonParameters" : {
-					},
-					"facing" : 1
-				},
-				"137" : {
-					"name" : "apexshiplight",
-					"jsonParameters" : {
-					},
-					"facing" : 1
-				},
-				"41" : {
-					"name" : "apexshiplight",
-					"jsonParameters" : {
-					},
-					"facing" : 1
-				},
-				"130" : {
-					"name" : "apexshiplight",
-					"jsonParameters" : {
-					},
-					"facing" : 1
-				},
-				"75" : {
-					"name" : "apexshiplight",
-					"jsonParameters" : {
-					},
-					"facing" : 1
-				},
-				"123" : {
-					"name" : "apexshiplight",
-					"jsonParameters" : {
-					},
-					"facing" : 1
-				},
-				"89" : {
-					"name" : "apexshiplight",
-					"jsonParameters" : {
-					},
-					"facing" : 1
-				},
-				"48" : {
-					"name" : "apexshiplight",
-					"jsonParameters" : {
-					},
-					"facing" : 1
-				},
-				"34" : {
-					"name" : "apexshiplight",
-					"jsonParameters" : {
-					},
-					"facing" : 1
-				}
+				"96" : {"name" : "apexshiplight","jsonParameters" : {},"facing" : 1 },
+				"65" : {"name" : "apexshiplight","jsonParameters" : {},"facing" : 1 },
+				"82" : {"name" : "apexshiplight","jsonParameters" : {},"facing" : 1 },
+				"116" : {"name" : "apexshiplight","jsonParameters" : {},"facing" : 1 },
+				"55" : {"name" : "apexshiplight","jsonParameters" : {},"facing" : 1 },
+				"137" : {"name" : "apexshiplight","jsonParameters" : {},"facing" : 1 },
+				"41" : {"name" : "apexshiplight","jsonParameters" : {},"facing" : 1 },
+				"130" : {"name" : "apexshiplight","jsonParameters" : {},"facing" : 1 },
+				"75" : {"name" : "apexshiplight","jsonParameters" : {},"facing" : 1 },
+				"123" : {"name" : "apexshiplight","jsonParameters" : {},"facing" : 1 },
+				"89" : {"name" : "apexshiplight","jsonParameters" : {},"facing" : 1 },
+				"48" : {"name" : "apexshiplight","jsonParameters" : {},"facing" : 1 },
+				"34" : {"name" : "apexshiplight","jsonParameters" : {},"facing" : 1 }
 			}
 		}
 	}
