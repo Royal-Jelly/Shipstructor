@@ -1,7 +1,7 @@
 {
   "itemName" : "devmodule",
   "price" : 3000,
-  "rarity" : "Legendary",
+  "rarity" : "Essential",
   "category" : "upgradeComponent",
   "description" : "A Nanite Module, Usefull For debugging the mod ~",
   "shortdescription" : "Developers Ship Module",

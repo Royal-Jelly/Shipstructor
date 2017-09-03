@@ -1,7 +1,7 @@
 {
   "itemName" : "humanT6module",
   "price" : 3000,
-  "rarity" : "Rare",
+  "rarity" : "Legendary",
   "category" : "upgradeComponent",
   "description" : "A Nanite Module, Creates a whole ship from stored nanites.",
   "shortdescription" : "Human T6 Ship Module",

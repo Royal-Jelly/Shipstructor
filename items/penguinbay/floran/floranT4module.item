@@ -1,7 +1,7 @@
 {
   "itemName" : "floranT4module",
   "price" : 3000,
-  "rarity" : "Uncommon",
+  "rarity" : "Legendary",
   "category" : "upgradeComponent",
   "description" : "A Nanite Module, Creates a whole ship from stored nanites.",
   "shortdescription" : "Floran T4 Ship Module",
