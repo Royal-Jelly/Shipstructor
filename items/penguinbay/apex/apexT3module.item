@@ -95,7 +95,7 @@
 				"1" : { "facing" : 1, "jsonParameters" : { }, "name" : "boosterflameapex" }
 			},
 			"6" : {
-				"61" : { "facing" : 1, "jsonParameters" : { }, "name" : "apexcaptainschairhover" },
+				"61" : { "facing" : 1, "jsonParameters" : { }, "name" : "apexcaptainschair" },
 				"54" : { "facing" : 1, "jsonParameters" : { }, "name" : "apexshipdoor" },
 				"23" : { "facing" : -1, "jsonParameters" : { }, "name" : "apexshipdoor" }
 			},

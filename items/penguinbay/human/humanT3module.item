@@ -1,7 +1,7 @@
 {
   "itemName" : "humanT3module",
   "price" : 3000,
-  "rarity" : "Uncommon",
+  "rarity" : "Legendary",
   "category" : "upgradeComponent",
   "description" : "A Nanite Module, Creates a whole ship from stored nanites.",
   "shortdescription" : "Human T3 Ship Module",
@@ -141,7 +141,7 @@
 			},
 			"6" : {
 				"61" : {
-					"name" : "humancaptainschairhover",
+					"name" : "humancaptainschair",
 					"facing" : 1,
 					"jsonParameters" : {
 					}

@@ -1,7 +1,7 @@
 {
   "itemName" : "floranT3module",
   "price" : 3000,
-  "rarity" : "Uncommon",
+  "rarity" : "Legendary",
   "category" : "upgradeComponent",
   "description" : "A Nanite Module, Creates a whole ship from stored nanites.",
   "shortdescription" : "Floran T3 Ship Module",
@@ -147,19 +147,19 @@
 					"facing" : 1,
 					"jsonParameters" : {
 					},
-					"name" : "florancaptainschairhover"
+					"name" : "florancaptainschair"
 				},
 				"54" : {
 					"facing" : -1,
 					"jsonParameters" : {
 					},
-					"name" : "floranshipdoorhover"
+					"name" : "floranshipdoor"
 				},
 				"23" : {
 					"facing" : -1,
 					"jsonParameters" : {
 					},
-					"name" : "floranshipdoorhover"
+					"name" : "floranshipdoor"
 				}
 			},
 			"15" : {
