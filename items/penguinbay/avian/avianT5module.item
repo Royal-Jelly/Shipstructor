@@ -126,7 +126,7 @@
 				"26" : {"facing" : -1,"name" : "avianshipdoor","jsonParameters" : {} },
 				"67" : {"facing" : -1,"name" : "avianshipdoor","jsonParameters" : {} },
 				"98" : {"facing" : 1,"name" : "avianshipdoor","jsonParameters" : {} },
-				"105" : {"facing" : 1,"name" : "aviancaptainschairhover","jsonParameters" : {} }
+				"105" : {"facing" : 1,"name" : "aviancaptainschair","jsonParameters" : {} }
 			},
 			"8" : {
 				"72" : {"jsonParameters" : {},"facing" : -1,"name" : "avianshiplocker","contents" : {} },

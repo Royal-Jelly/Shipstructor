@@ -102,7 +102,7 @@
 				"84" : {"jsonParameters" : {},"name" : "avianshipdoor","facing" : 1 },
 				"53" : {"jsonParameters" : {},"name" : "avianshipdoor","facing" : -1 },
 				"43" : {"jsonParameters" : {},"name" : "avianshipdoor","facing" : 1 },
-				"91" : {"jsonParameters" : {},"name" : "aviancaptainschairhover","facing" : 1 }
+				"91" : {"jsonParameters" : {},"name" : "aviancaptainschair","facing" : 1 }
 			},
 			"15" : {
 				"72" : {"jsonParameters" : {},"name" : "apexshiplight","facing" : 1 },
