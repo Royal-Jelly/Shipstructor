@@ -12,7 +12,7 @@
   "renderParameters" : {
     "texture" : "shiphullbarrier.png",
     "variants" : 5,
-    "lightTransparent" : false,
+    "lightTransparent" : true,
     "occludesBelow" : true,
     "multiColored" : false,
     "zLevel" : 0
