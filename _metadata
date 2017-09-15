@@ -7,5 +7,5 @@
   "requires" : ["modules-in-a-box"],
   "link" : "",
   "steamContentId" : "",
-  "version" : "1.2.9"
+  "version" : "1.2.12"
 }
