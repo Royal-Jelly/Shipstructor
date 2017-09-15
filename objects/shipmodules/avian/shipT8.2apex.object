@@ -24,7 +24,7 @@
       "imageLayers" : [ { "image" : "/ships/avian/avianT8.png:default.1" } ],
       "renderLayer" : "BackgroundOverlay",
 
-      "imagePosition" : [-60, -224],
+      "imagePosition" : [-298, -77],
       "frames" : 1,
       "animationCycle" : 1.0
 	}
