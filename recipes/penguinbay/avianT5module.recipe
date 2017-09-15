@@ -1,0 +1,13 @@
+{
+  "currencyInputs" : {
+    "money" : 3000
+  },
+  "input" : [
+    { "item" : "upgrademodule", "count" : 4 }
+  ],
+  "output" : {
+    "item" : "avianT5module",
+    "count" : 1
+  },
+  "groups" : [ "penguinbay" ]
+}
