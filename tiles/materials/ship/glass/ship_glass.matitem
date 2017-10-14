@@ -1,0 +1,10 @@
+{
+  "itemName" : "ship_glass",
+  "price" : 0,
+  "category" : "block",
+  "rarity" : "Common",
+  "inventoryIcon" : "ship_glass_item.png",
+  "description" : "Probably airtight.",
+  "shortdescription" : "Ship Glass",
+
+  "materialId" : 1292 }

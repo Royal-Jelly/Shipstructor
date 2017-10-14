@@ -1,0 +1,21 @@
+{ "animatedParts" : {
+    "stateTypes" : {
+      "boosterState" : {
+        "default" : "idle",
+        "states" : {
+          "idle" : {
+            "frames" : 4,
+            "cycle" : 1.0,
+            "mode" : "loop" } } } },
+
+    "parts" : {
+      "booster" : {
+        "properties" : {
+          "centered" : false,
+          "fullbright" : false },
+
+        "partStates" : {
+          "boosterState" : {
+            "idle" : {
+              "properties" : {
+                "image" : "<partImage>:idle.<frame>" } } } } } } } }

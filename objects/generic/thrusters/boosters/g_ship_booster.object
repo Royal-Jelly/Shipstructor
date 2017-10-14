@@ -1,0 +1,31 @@
+{ "objectName" : "g_ship_booster",
+  "rarity" : "Common",
+  "description" : "Generic booster thruster, probably airtight?",
+  "shortdescription" : "Booster Thruster [Generic]",
+  "category" : "decorative",
+
+  "lightColor" : [59, 183, 255],
+  "pointLight" : true,
+  "flickerDistance" : 0.15,
+  "flickerStrength" : 0.05,
+  "flickerTiming" : 4,
+  
+  "inventoryIcon" : "g_ship_booster_icon.png",
+  
+  "orientations" : [ {
+      "dualImage" : "g_ship_booster.png:idle.1",
+
+      "imagePosition" : [-24, -8],
+      "frames" : 1,
+      "animationCycle" : 0.4,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "top" ] } ],
+      
+  "animation" : "/objects/thruster.animation",
+  "animationParts" : {
+    "booster" : "g_ship_booster.png" },
+
+  "animationPosition" : [-24, -8],
+
+  "soundEffect" : "/sfx/objects/boosterflame.ogg" }

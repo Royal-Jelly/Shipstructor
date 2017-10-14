@@ -1,0 +1,19 @@
+{
+  "materialId" : 21293,
+  "materialName" : "g_ship_girder",
+  "particleColor" : [111, 94, 74, 255],
+  "itemDrop" : "g_ship_girder",
+  "description" : "A generic ship girder.",
+  "shortdescription" : "Ship Girder [Generic]",
+  "footstepSound" : "/sfx/blocks/footstep_rock.ogg",
+  "health" : 1,
+  "category" : "materials",
+  
+  "renderTemplate" : "/tiles/ship_hull_template.config",
+  "renderParameters" : {
+    "texture" : "g_ship_girder.png",
+    "variants" : 1,
+    "lightTransparent" : false,
+    "occludesBelow" : false,
+    "multiColored" : false,
+    "zLevel" : 1722 } }

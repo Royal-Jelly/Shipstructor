@@ -1,0 +1,36 @@
+{ "objectName" : "g_ship_door",
+  "rarity" : "Common",
+  "description" : "I think it opens?",
+  "shortdescription" : "Ship Door [Generic]",
+  "category" : "decorative",
+  
+  "inventoryIcon" : "g_ship_door_icon.png",
+  
+  "orientations" : [ {
+      "dualImage" : "g_ship_door.png:default",
+
+      "imagePosition" : [0, 0],
+      "frames" : 1,
+      "animationCycle" : 1.0,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "top" ] } ],
+
+  "scripts" : [ "/objects/wired/door/door.lua" ],
+  "scriptDelta" : 5,
+
+  "animation" : "/objects/wired/door/door.animation",
+  "animationCustom" : {
+    "sounds" : {
+      "open" : {
+        "pool" : [ "/sfx/objects/apexcooldoor_open.ogg" ],
+        "rangeMultiplier" : 0.5 },
+      "close" : {
+        "pool" : [ "/sfx/objects/apexcooldoor_close.ogg" ],
+        "rangeMultiplier" : 0.5 } } },
+  "animationParts" : {
+    "door" : "g_ship_door.png" },
+  "animationPosition" : [0, 0],
+
+  "inputNodes" : [ [-1, 4] ],
+  "outputNodes" : [ [0, 0] ] }

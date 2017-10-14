@@ -1,4 +1,0 @@
-[
-{"op":"add","path":"/interactData/items/-","value":{ "item" : { "name" : "mechcraftingtable" } } } ,
-{"op":"add","path":"/interactData/items/-","value":{ "item" : { "name" : "mechassemblystation" } }}
-]

@@ -1,0 +1,10 @@
+{
+  "itemName" : "g_ship_interior_wall",
+  "price" : 0,
+  "category" : "block",
+  "rarity" : "Common",
+  "inventoryIcon" : "g_ship_interior_wall_item.png",
+  "description" : "Quite fancy, But 'Airtight'.",
+  "shortdescription" : "Ship Interior Wall [Generic]",
+
+  "materialId" : 21294 }

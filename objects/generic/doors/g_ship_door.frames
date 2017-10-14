@@ -1,0 +1,16 @@
+{ "frameGrid" : {
+    "size" : [16, 40],
+    "dimensions" : [3, 1],
+    "names" : [
+      [ "v.closed", "v.half", "v.open" ] ] },
+  
+  "aliases"  : {
+    "default"      : "v.closed",
+    "closeLeft.1"  : "v.half"  ,
+    "closeLeft.2"  : "v.closed",
+    "closeRight.1" : "v.half"  ,
+    "closeRight.2" : "v.closed",
+    "openLeft.1"   : "v.half"  ,
+    "openLeft.2"   : "v.open"  ,
+    "openRight.1"  : "v.half"  ,
+    "openRight.2"  : "v.open" } }

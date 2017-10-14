@@ -1,0 +1,14 @@
+{
+  "itemName" : "test_block",
+  "price" : 0,
+  "category" : "block",
+  "rarity" : "Common",
+  "inventoryIcon" : "test_block.png",
+  "description" : "YES",
+  "shortdescription" : "SHIPCRAFTER TEST BLOCK",
+  "glitchdescription" : "no",
+  "florandescription" : "yuckyuck",
+  "novakiddescription" : "yiffyaff",
+
+  "materialId" : 1290
+}

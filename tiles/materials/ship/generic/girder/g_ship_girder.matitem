@@ -1,0 +1,10 @@
+{
+  "itemName" : "g_ship_girder",
+  "price" : 0,
+  "category" : "block",
+  "rarity" : "Common",
+  "inventoryIcon" : "g_ship_girder_item.png",
+  "description" : "A generic ship girder.",
+  "shortdescription" : "Ship Girder [Generic]",
+
+  "materialId" : 21293 }

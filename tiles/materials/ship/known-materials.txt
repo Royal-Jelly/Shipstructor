@@ -1,0 +1,4 @@
+ 1291 - Generic Ship Hull             | Depth - 1720
+ 1292 - Ship Glass                    | Depth - 1721
+21293 - Generic Ship Girder           | Depth - 1722
+21294 - Generic Ship Interior Wall    | Depth - 1723

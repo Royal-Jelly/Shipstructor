@@ -1,0 +1,24 @@
+{
+  "materialId" : 1290,
+  "materialName" : "test_block",
+  "particleColor" : [111, 94, 74, 255],
+  "itemDrop" : "test_block",
+  "description" : "This is a test lol.",
+  "shortdescription" : "SHIPCRAFTER TEST BLOCK",
+  "glitchDescription" : "Beep boop I sloop.",
+  "floranDescription" : "SSSSSSS",
+  "novakidDescription" : "I am extra~",
+  "footstepSound" : "/sfx/blocks/footstep_rock.ogg",
+  "health" : 1,
+  "category" : "materials",
+  
+  "renderTemplate" : "/tiles/test_template.config",
+  "renderParameters" : {
+    "texture" : "test_block.png",
+    "variants" : 1,
+    "lightTransparent" : false,
+    "occludesBelow" : false,
+    "multiColored" : false,
+    "zLevel" : 1720
+  }
+}

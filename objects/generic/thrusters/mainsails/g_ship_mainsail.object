@@ -1,0 +1,32 @@
+{ "objectName" : "g_ship_mainsail",
+  "rarity" : "Common",
+  "description" : "Generic mainsail thruster, highly explosive?",
+  "shortdescription" : "Mainsail Thruster [Generic]",
+  "category" : "decorative",
+  
+  "lightColor" : [59, 183, 255],
+  "pointLight" : true,
+  "flickerDistance" : 0.3,
+  "flickerStrength" : 0.06,
+  "flickerTiming" : 4,
+
+  "inventoryIcon" : "g_ship_mainsail_icon.png",
+  
+  "orientations" : [ {
+      "dualImage" : "g_ship_mainsail.png:idle.1",
+
+      "imagePosition" : [-96, -36],
+      "frames" : 1,
+      "animationCycle" : 0.4,
+
+      "spaceScan" : 0.1,
+      "anchors"   : [ "right" ],
+      "direction" : "right" } ],
+
+  "animation" : "/objects/thruster.animation",
+  "animationParts" : {
+    "booster" : "g_ship_mainsail.png" },
+
+  "animationPosition" : [-96, -36],
+
+  "soundEffect" : "/sfx/objects/boosterflame.ogg" }
