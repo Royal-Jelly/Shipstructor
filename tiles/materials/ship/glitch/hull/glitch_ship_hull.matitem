@@ -1,0 +1,10 @@
+{
+  "itemName" : "glitch_ship_hull",
+  "price" : 0,
+  "category" : "block",
+  "rarity" : "Common",
+  "inventoryIcon" : "glitch_ship_hull_item.png",
+  "description" : "A generic ship hull.",
+  "shortdescription" : "Ship Hull [Glitch]",
+
+  "materialId" : 21295 }

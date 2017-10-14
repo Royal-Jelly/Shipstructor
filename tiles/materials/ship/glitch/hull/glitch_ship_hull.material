@@ -1,0 +1,19 @@
+{
+  "materialId" : 21295,
+  "materialName" : "glitch_ship_hull",
+  "particleColor" : [111, 94, 74, 255],
+  "itemDrop" : "glitch_ship_hull",
+  "description" : "Very rustic, yet rusty.",
+  "shortdescription" : "Ship Hull [Glitch]",
+  "footstepSound" : "/sfx/blocks/footstep_rock.ogg",
+  "health" : 1,
+  "category" : "materials",
+  
+  "renderTemplate" : "/tiles/ship_hull_template.config",
+  "renderParameters" : {
+    "texture" : "glitch_ship_hull.png",
+    "variants" : 1,
+    "lightTransparent" : false,
+    "occludesBelow" : false,
+    "multiColored" : false,
+    "zLevel" : 1720 } }
