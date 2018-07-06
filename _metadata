@@ -1,11 +1,15 @@
 {
   "author" : "Royal~Jelly",
-  "description" : "***Disclaimer: Installing Shipstructor is a one-way trip.***",
-  "friendlyName" : "Shipstructor",
-  "includes" : ["modules-in-a-box"],
-  "link" : "",
   "name" : "shipstructor",
-  "requires" : ["modules-in-a-box"],
+  "description" : "***Disclaimer: There is no Warrentee or money back Garrentee in the case of this mod eats the users ship.*** 
+/nThis mod Aims to: 
+/n(1) Create a framework for players to blueprint and swap out Starships. 
+/n(2) Re-Impliment all Vanilla Ships for use by any race in the base game, this means no moded races for now. 
+/n(3) Create and simple way to upload and share blueprints.",
+  "friendlyName" : "Shipstructor",
+  "includes" : ["FrackinUniverse"],
+  "requires" : [],
+  "link" : "",
   "steamContentId" : "",
-  "version" : "1.2.4"
+  "version" : "1.2.13"
 }

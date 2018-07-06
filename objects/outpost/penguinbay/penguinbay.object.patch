@@ -1,24 +1,43 @@
 [
   {
+    "op": "replace",
+    "path": "/interactAction",
+    "value": "OpenCraftingInterface"
+  },
+  {
+    "op": "remove",
+    "path": "/interactData/buyFactor"
+  },
+  {
+    "op": "remove",
+    "path": "/interactData/sellFactor"
+  },
+  {
     "op": "remove",
     "path": "/interactData/items"
   },
   {
     "op": "add",
-    "path": "/interactData/items",
+    "path": "/interactData/filter",
     "value": [
-      {
-        "item": "fakelicense5",
-        "prerequisiteShipLevel": 3,
-        "exclusiveQuests": [ "shipupgrade5", "illegalshipupgrade5" ]
-      },
-      { "item": "apexT3shipcontroller" },
-      { "item": "avianT3shipcontroller" },
-      { "item": "floranT3shipcontroller" },
-      { "item": "glitchT3shipcontroller" },
-      { "item": "humanT3shipcontroller" },
-      { "item": "hylotlT3shipcontroller" },
-      { "item": "novakidT3shipcontroller" }
+      "penguinbay"
     ]
+  },
+  {
+    "op": "replace",
+    "path": "/interactData/config",
+    "value": "/interface/windowconfig/craftingmerchant.config"
+  },
+  {
+    "op": "add",
+    "path": "/interactData/paneLayoutOverride/windowtitle/icon",
+    "value": {
+      "file": "/interface/crafting/penguinbay.png"
+    }
+  },
+  {
+    "op": "replace",
+    "path": "/interactData/paneLayoutOverride/windowtitle/subtitle",
+    "value": "100% legal starship modification"
   }
 ]
