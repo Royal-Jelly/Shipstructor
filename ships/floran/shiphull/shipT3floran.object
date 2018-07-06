@@ -28,5 +28,20 @@
       "frames" : 1,
       "animationCycle" : 1.0
 	}
-  ]
+  ],
+  "scripts" : [ "/objects/ship/fu_shipstatmodifier.lua" ],
+  "scriptDelta" : 60,
+  
+  "stats" : {
+    "shipSpeed" : 3.75,
+    "shipMass" : 3
+  },
+  "capabilities" : [
+    "systemTravel",
+    "planetTravel"
+  ],
+  "maxAmountGroups" : {
+    "ftlDrive" : 1
+  },
+  "byosOnly" : true
 }
