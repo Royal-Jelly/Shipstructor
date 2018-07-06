@@ -1,23 +1,57 @@
 {
-  "itemName" : "avianT3module",
-  "price" : 3000,
-  "rarity" : "Legendary",
-  "category" : "upgradeComponent",
-  "description" : "A Nanite Module, Creates a whole ship from stored nanites.",
-  "shortdescription" : "Avian T3 Ship Module",
-  "twoHanded" : true,
-  "maxStack" : 1,
-  "itemTags" : ["shipmodule"],
+	"objectName" : "avianT3module",
+    "rarity" : "Legendary",
+    "description" : "A Nanite Module, Creates a whole ship from stored nanites.",
+    "shortdescription" : "Avian T3 Ship Module",
+	"race" : "apex",
+	"category" : "tool",
+    "price" : 3000,
+	"printable" : false,
+	
+	"inventoryIcon" : "apexmodule.png",
+	"orientations" : [
+		{
+			"image" : "/objects/basestorage/miab_basestore_replacer/miab_basestore_replacer.png:<color>.<frame>",
+			"imagePosition" : [-8,0],
+			"frames" : 5,
+			"animationCycle" : 1,
+			"spaceScan" : 0.1,
+			"direction" : "right",
+	        "renderLayer" : "Object+5"
+		}
+	],
+	
+	"animation" : "/objects/basestorage/miab_basestore_replacer/miab_basestore_replacer.animation",
+	"animationParts" : {
+		"normal_operation_image" : "/objects/basestorage/miab_basestore_replacer/miab_basestore_replacer.png",
+		"printer_icon" : "/objects/basestorage/miab_basestore_replacer/miab_basestore_icons.png"
+	},
+	"animationPosition" : [-8, 0],
 
-  "inventoryIcon" : "avianmodule.png",
-
-  // MIAB SETTINGS -- [left, bottom, right, top]
-	"miab_breakStuff" : true,
-	"miab_dumpJSON" : false, 
-	"miab_fixed_area_to_scan_bounding_box" : [1006, 1018, 1075, 1035],
-	"miab_fixed_area_to_ignore_during_scan_bounding_box" : [1020, 1024, 1027, 1033],
-
+	"scripts" : [
+		"/objects/basestorage/miab_basestore_replacer/lua/miab_basestore_replacer_activator.lua",
+		"/objects/basestorage/miab_basestore_replacer/lua/miab_basestore_printer.lua",
+		"/objects/basestorage/miab_basestore_replacer/lua/miab_basestore_reader.lua",
+		"/objects/basestorage/miab_basestore_replacer/lua/miab_basestore_blueprint.lua",
+		"/objects/basestorage/miab_basestore_replacer/lua/miab_basestore_util.lua"
+	],
+	"scriptDelta" : 5,
+	"breakDropOptions" : [],
 	"miab_printer_offset" : [1, 0],
+	
+
+	"miabScannerOptions": {
+        // --Area-- [left, bottom, right, top]
+		"areaToScan": [1006, 1018, 1075, 1035],
+		"areaToIgnore": [1020, 1024, 1027, 1033],
+		"clearArea": true,
+		"dropContents": false,
+		"givePrinter": false,
+		"giveReplacer": false,
+		"saveBlueprint": false,
+		"defaultAnimation": "normal_operation",
+		"animationDuration": 0
+	},
 
 	"miab_basestore_blueprint" : {
 		"boundingBoxSize" : [ 69.0, 17.0 ],
