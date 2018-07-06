@@ -194,34 +194,16 @@ function clearArea()
 	self.miab.obstructionTable = {}
 	self.miab.anythingPrinted = false
 	
-	local bl = { self.miab.pos[1], self.miab.pos[2] }
-	local tr = { self.miab.pos[1] + blueprint.boundingBoxSize[1], self.miab.pos[2] + blueprint.boundingBoxSize[2] }
+    local bl = { self.miab.pos[1], self.miab.pos[2]}
+    local tr = { self.miab.pos[1] + blueprint.boundingBoxSize[1] + 100, self.miab.pos[2] + blueprint.boundingBoxSize[2] + 100}
 	local entityCount = nil
 	local entityIDs = {}
 	local currentEntityType = nil
 	
-	local iterations = 0
+
 	for _y = tr[2], bl[2], -1 do
 		for _x = bl[1], tr[1], 1 do
-			if (not self.miab.areaToIgnore) or (self.miab.areaToIgnore and not blueprint.isInsideBoundingBox({_x, _y}, self.miab.areaToIgnore)) then
-				if (world.isTileProtected({_x, _y})) then
-					self.miab.buildingStage = PRINTPROTECTED
-					return
-				end
-			end
-			iterations = iterations + 1
-			if (iterations % YIELDPOINT == 0) then coroutine.yield() end
-		end
-	end
-	
-	iterations = 0
-	for _y = tr[2], bl[2], -1 do
-		for _x = bl[1], tr[1], 1 do
-			if (not self.miab.areaToIgnore) or (self.miab.areaToIgnore and not blueprint.isInsideBoundingBox({_x, _y}, self.miab.areaToIgnore)) then
-				world.destroyLiquid({_x, _y})
-			end
-			iterations = iterations + 1
-			if (iterations % YIELDPOINT == 0) then coroutine.yield() end
+			world.destroyLiquid({_x, _y})
 		end
 	end
 	
@@ -229,12 +211,11 @@ function clearArea()
 	-- entityIDs = fixedEntityQuery(bl, tr) -- we should be fine with trusting the game's entityquery around the world wrap now
 	entityIDs = world.entityQuery(bl, tr, { boundMode = "collisionarea", withoutEntityId = entity.id() })
 	self.miab.looseEnds = {} -- this is for cleaning up rogue item drops (from stuff that drops itself in die(), where we can't get at it)
-	iterations = 0
 	for _, entID in pairs(entityIDs) do
 		if (entityInOurBox(entID, bl, tr)) then
 			currentEntityType = world.entityType(entID) -- "player", "monster", "object", "itemdrop", "projectile", "plant", "plantdrop", "effect", "npc"
 
-			if (currentEntityType == "player") or (currentEntityType == "npc") then
+			--[[if (currentEntityType == "player") or (currentEntityType == "npc") then
 				entityCount = entityCount + 1
 				self.miab.obstructionTable[entID] = true
 			elseif (currentEntityType == "monster") then
@@ -246,11 +227,11 @@ function clearArea()
 					or (world.monsterType(entID) == "petcat")
 					or (world.monsterType(entID) == "crasberry")
 					or (world.monsterType(entID) == "snugget")
-					or (world.monsterType(entID) == "petorbis") then
+					or (world.monsterType(endID) == "petorbis") then
 						-- its the imortal ship pet - we have to surrender
 						entityCount = entityCount + 1
 				end
-			elseif (currentEntityType == "object") then
+			else]]if (currentEntityType == "object") then
 				if (world.containerSize(entID)) then
 					world.containerTakeAll(entID) -- dropContents is false and the object has an inventory so we delete that inventory rather than drop it
 				end
@@ -258,58 +239,48 @@ function clearArea()
 				local objectBreakDrop = world.getObjectParameter(entID, "breakDropOptions")
 				if (objectBreakDrop) then self.miab.looseEnds[world.entityPosition(entID)] = world.entityName(entID) end
 				--
-				world.breakObject(entID, true)
+				if(world.entityName(entID) ~= "teleporter" and world.entityName(entID) ~= "avianteleporter" and world.entityName(entID) ~= "floranteleporter" and world.entityName(entID) ~= "glitchteleporter" and world.entityName(entID) ~= "humanteleporter" and world.entityName(entID) ~= "hylotlteleporter" and world.entityName(entID) ~= "novakidteleporter" and world.entityName(entID) ~= "apexshiptether" and world.entityName(entID) ~= "avianshiptether" and world.entityName(entID) ~= "floranshiptether" and world.entityName(entID) ~= "glitchshiptether" and world.entityName(entID) ~= "humanshiptether" and world.entityName(entID) ~= "hylotlshiptether" and world.entityName(entID) ~= "novakidshiptether" and world.entityName(entID) ~= "fu_byosteleporter") then -- Blacklist.
+					world.breakObject(entID, true)
+				end
 			elseif (currentEntityType == "plant") then
 				blueprint.clearBlock(world.entityPosition(entID), "foreground")
 			else
 				--sb.logWarn ("Modules in a Box: Unhandled Entity detected during clearArea() of type " .. currentEntityType)
 			end
-			iterations = iterations + 1
-			if (iterations % YIELDPOINT == 0) then coroutine.yield() end
 		end
 	end
 
-	iterations = 0
-	for _y = tr[2], bl[2], -1 do
-		for _x = bl[1], tr[1], 1 do
-			if (not self.miab.areaToIgnore) or (self.miab.areaToIgnore and not blueprint.isInsideBoundingBox({_x, _y}, self.miab.areaToIgnore)) then
-				local __y = tostring(math.floor(_y - bl[2]))
-				local __x = tostring(math.floor(_x - bl[1]))
-				if (blueprint.layoutTableForeground[__y][__x] > 0) then breakBlock({_x, _y}, "foreground") end
-				if (blueprint.layoutTableBackground[__y][__x] > 0) then breakBlock({_x, _y}, "background") end
-			end
-			iterations = iterations + 1
-			if (iterations % YIELDPOINT == 0) then coroutine.yield() end
-		end
-	end
+    for _y = tr[2], bl[2], -1 do
+        for _x = bl[1], tr[1], 1 do
+            local y = tostring(math.floor(_y - bl[2]))
+            local x = tostring(math.floor(_x - bl[1]))
+			breakBlock({_x, _y}, "foreground")
+			breakBlock({_x, _y}, "background")
+        end
+    end
 
 	if (entityCount > 0) then
 		-- there are entities blocking placement
 		self.miab.buildingStage = PRINTOBSTRUCTED
 	else
-		self.miab.buildingStage = PRELOOSEENDS
+		self.miab.buildingStage = DOUBLETAPBLOCKS
 	end
 end
 
 function clearModdedBlocks()
-	local bl = { self.miab.pos[1], self.miab.pos[2] }
-	local tr = { self.miab.pos[1] + blueprint.boundingBoxSize[1], self.miab.pos[2] + blueprint.boundingBoxSize[2] }
+    local bl = { self.miab.pos[1], self.miab.pos[2]}
+    local tr = { self.miab.pos[1] + blueprint.boundingBoxSize[1] + 100, self.miab.pos[2] + blueprint.boundingBoxSize[2] + 100}
+	
+    for _y = tr[2], bl[2], -1 do
+        for _x = bl[1], tr[1], 1 do
+            local y = tostring(math.floor(_y - bl[2]))
+            local x = tostring(math.floor(_x - bl[1]))
+			breakBlock({_x, _y}, "foreground")
+			breakBlock({_x, _y}, "background")
+        end
+    end
 
-	local iterations = 0
-	for _y = tr[2], bl[2], -1 do
-		for _x = bl[1], tr[1], 1 do
-			if (not self.miab.areaToIgnore) or (self.miab.areaToIgnore and not blueprint.isInsideBoundingBox({_x, _y}, self.miab.areaToIgnore)) then
-				local __y = tostring(math.floor(_y - bl[2]))
-				local __x = tostring(math.floor(_x - bl[1]))
-				if (blueprint.layoutTableForeground[__y][__x] > 0) then breakBlock({_x, _y}, "foreground") end
-				if (blueprint.layoutTableBackground[__y][__x] > 0) then breakBlock({_x, _y}, "background") end
-			end
-			iterations = iterations + 1
-			if (iterations % YIELDPOINT == 0) then coroutine.yield() end
-		end
-	end
-
-	self.miab.buildingStage = PLACEBLOCKS
+    self.miab.buildingStage = PLACEBLOCKS
 end
 
 function printBlocks()
