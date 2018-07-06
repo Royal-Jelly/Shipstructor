@@ -1,0 +1,7 @@
+{
+  "frames" : "miab_obstruction.png",
+  "variants" : 1,
+  "frameNumber" : 1,
+  "animationCycle" : 3,
+  "offset" : [0, 0]
+}

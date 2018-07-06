@@ -1,0 +1,15 @@
+{
+  "projectileName" : "miab_buildingcode",
+  "frames" : "miab_buildingcode.png",
+  "animationCycle" : 1,
+  "level" : 0,
+  "physics" : "default",
+  "frameNumber" : 1,
+  "damageKindImage" : "miab_buildingcode.png",
+  "image" : "miab_buildingcode.png",
+  "pointLight" : false,
+  "power" : 0.0,
+//  "lightColor" : [41, 41, 171],
+  "damageKind" : "default",
+  "timeToLive" : 3
+}

@@ -1,0 +1,24 @@
+{
+  "kind" : "miab_obstruction",
+  "location" : "mouth",
+  "definition" : {
+    "duration" : 3,
+    "loops" : false,
+    "start" : {
+      "particles" : [
+      [ ]
+      ],
+      "sounds" : [ [ ] ]
+    },
+    "particles" : [
+    [ "miab_obstruction" ]
+    ],
+    "sounds" : [ [ ] ],
+    "stop" : {
+      "particles" : [
+        [ ]
+      ],
+      "sounds" : [ [ ] ]
+    }
+  }
+}

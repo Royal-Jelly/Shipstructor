@@ -1,0 +1,16 @@
+[
+  {
+    "op": "remove",
+    "path": "/backgroundOverlays"
+  },
+  {
+    "op": "replace",
+    "path": "/blockKey",
+    "value": "novakidblockKey.config:blockKey"
+  },
+  {
+    "op": "replace",
+    "path": "/blockImage",
+    "value": "shipstructorT3novakid.png"
+  }
+]

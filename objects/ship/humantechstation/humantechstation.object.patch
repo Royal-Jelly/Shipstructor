@@ -1,0 +1,23 @@
+[ 
+  {
+    "op": "replace",
+    "path": "/shortdescription",
+	"value": "Human S.A.I.L Interface"
+  },
+  {
+    "op": "remove",
+    "path": "/scripts/0"
+  },
+  {
+    "op": "remove",
+    "path": "/shipPetType"
+  },
+  {
+    "op": "remove",
+    "path": "/spawnOffset"
+  },
+  {
+    "op": "remove",
+    "path": "/uniqueId"
+  }
+]

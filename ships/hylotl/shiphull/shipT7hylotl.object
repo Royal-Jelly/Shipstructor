@@ -1,0 +1,32 @@
+{
+
+  "objectName" : "shipT7hylotl",
+  "colonyTags" : ["Hylotl"],
+  "printable" : false,
+  "rarity" : "Legendary",
+  "description" : "An Hylotl ship Tier 7, Not for interstellar travel",
+  "shortdescription" : "Hylotl Ship T7",
+  "race" : "hylotl",
+
+  "health" : 1000,
+
+  "apexDescription" : "This ship can store lots of cargo, miniknog aproves.",
+  "avianDescription" : "TBA",
+  "floranDescription" : "TBA",
+  "glitchDescription" : "TBA",
+  "humanDescription" : "TBA",
+  "hylotlDescription" : "TBA",
+  "novakidDescription" : "TBA",
+
+  "inventoryIcon" : "shipT0hylotlicon.png",
+  "orientations" : [
+    {
+      "imageLayers" : [ { "image" : "/ships/hylotl/hylotlT7.png:<color>" } ],
+      "renderLayer" : "BackgroundOverlay",
+
+      "imagePosition" : [-424, -80],
+      "frames" : 1,
+      "animationCycle" : 1.0
+	}
+  ]
+}

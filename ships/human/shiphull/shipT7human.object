@@ -1,0 +1,32 @@
+{
+
+  "objectName" : "shipT7human",
+  "colonyTags" : ["Human"],
+  "printable" : false,
+  "rarity" : "Legendary",
+  "description" : "An Human ship Tier 7, Not for interstellar travel",
+  "shortdescription" : "Human Ship T7",
+  "race" : "human",
+
+  "health" : 1000,
+
+  "apexDescription" : "This ship can store lots of cargo, miniknog aproves.",
+  "avianDescription" : "TBA",
+  "floranDescription" : "TBA",
+  "glitchDescription" : "TBA",
+  "humanDescription" : "TBA",
+  "hylotlDescription" : "TBA",
+  "novakidDescription" : "TBA",
+
+  "inventoryIcon" : "shipT0humanicon.png",
+  "orientations" : [
+    {
+      "imageLayers" : [ { "image" : "/ships/human/humanT7.png:<color>" } ],
+      "renderLayer" : "BackgroundOverlay",
+
+      "imagePosition" : [-424, -80],
+      "frames" : 1,
+      "animationCycle" : 1.0
+	}
+  ]
+}

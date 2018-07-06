@@ -1,0 +1,3 @@
+[
+    { "op": "add", "path": "/printable", "value": true }
+]

@@ -1,0 +1,32 @@
+{
+
+  "objectName" : "shipT8floran",
+  "colonyTags" : ["Floran"],
+  "printable" : false,
+  "rarity" : "Legendary",
+  "description" : "An Floran ship Tier 8, Not for interstellar travel",
+  "shortdescription" : "Floran Ship T8",
+  "race" : "floran",
+
+  "health" : 1000,
+
+  "apexDescription" : "This ship can store lots of cargo, miniknog aproves.",
+  "avianDescription" : "TBA",
+  "floranDescription" : "TBA",
+  "glitchDescription" : "TBA",
+  "humanDescription" : "TBA",
+  "hylotlDescription" : "TBA",
+  "novakidDescription" : "TBA",
+
+  "inventoryIcon" : "shipT0floranicon.png",
+  "orientations" : [
+    {
+      "imageLayers" : [ { "image" : "/ships/floran/floranT8.png:<color>" } ],
+      "renderLayer" : "BackgroundOverlay",
+
+      "imagePosition" : [-424, -80],
+      "frames" : 1,
+      "animationCycle" : 1.0
+	}
+  ]
+}

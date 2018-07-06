@@ -1,0 +1,20 @@
+
+{
+  "materialId" : 31000,
+  "materialName" : "shiphullbarrier",
+  "shortdescription" : "Industrusctable Ship Hull",
+  "description" : "Someone's been creative, are you making a ship perhaps?.",
+  "footstepSound" : "/sfx/blocks/footstep_lightmetal.ogg",
+  "health" : 998,
+  "category": "materials",
+
+  "renderTemplate" : "/tiles/classicmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "shiphullbarrier.png",
+    "variants" : 5,
+    "lightTransparent" : true,
+    "occludesBelow" : true,
+    "multiColored" : false,
+    "zLevel" : 0
+  }
+}

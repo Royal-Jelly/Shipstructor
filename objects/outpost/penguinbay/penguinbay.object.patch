@@ -1,0 +1,43 @@
+[
+  {
+    "op": "replace",
+    "path": "/interactAction",
+    "value": "OpenCraftingInterface"
+  },
+  {
+    "op": "remove",
+    "path": "/interactData/buyFactor"
+  },
+  {
+    "op": "remove",
+    "path": "/interactData/sellFactor"
+  },
+  {
+    "op": "remove",
+    "path": "/interactData/items"
+  },
+  {
+    "op": "add",
+    "path": "/interactData/filter",
+    "value": [
+      "penguinbay"
+    ]
+  },
+  {
+    "op": "replace",
+    "path": "/interactData/config",
+    "value": "/interface/windowconfig/craftingmerchant.config"
+  },
+  {
+    "op": "add",
+    "path": "/interactData/paneLayoutOverride/windowtitle/icon",
+    "value": {
+      "file": "/interface/crafting/penguinbay.png"
+    }
+  },
+  {
+    "op": "replace",
+    "path": "/interactData/paneLayoutOverride/windowtitle/subtitle",
+    "value": "100% legal starship modification"
+  }
+]

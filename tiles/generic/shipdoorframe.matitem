@@ -1,0 +1,15 @@
+{
+  "itemName" : "shipdoorframe",
+  "rarity" : "Common",
+  "inventoryIcon" : "shipdoorframe_icon.png",
+  "dropCollision" : [-2.5, -2.0, 2.5, 2.0],
+  "shortdescription" : "Ship Door Frame",
+  "description" : "It's what you see when you look close at an open, high-tech doorway.",
+  "glitchdescription" : "Statement. Star ship door frame.",
+  "florandescription" : "Ssship door frame.",
+  "learnBlueprintsOnPickup" : [
+    "shipdoorframe"
+  ],
+
+  "materialId" : 31002
+}

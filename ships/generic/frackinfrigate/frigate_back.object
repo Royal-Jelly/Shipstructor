@@ -1,0 +1,30 @@
+{
+
+  "objectName" : "frigate_back",
+  "colonyTags" : ["starship"],
+  "printable" : false,
+  "rarity" : "Legendary",
+  "description" : "An massive amount of Cargo can be loaded up into this star cruiser, this is the rear hull ",
+  "shortdescription" : "Frigate Star Cruiser",
+  "race" : "glitch",
+
+  "apexDescription" : "This ship can store lots of cargo, miniknog aproves.",
+  "avianDescription" : "TBA",
+  "floranDescription" : "TBA",
+  "glitchDescription" : "TBA",
+  "humanDescription" : "TBA",
+  "hylotlDescription" : "TBA",
+  "novakidDescription" : "TBA",
+
+  "inventoryIcon" : "frigate_icon.png",
+  "orientations" : [
+    {
+      "imageLayers" : [ { "image" : "frigate_back.png:<color>" } ],
+      "renderLayer" : "Object-5",
+
+      "imagePosition" : [-512, -400],
+      "frames" : 1,
+      "animationCycle" : 1.0
+	}
+  ]
+}

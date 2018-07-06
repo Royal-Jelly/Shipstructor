@@ -1,0 +1,32 @@
+{
+
+  "objectName" : "shipT3apex",
+  "colonyTags" : ["Apex"],
+  "printable" : false,
+  "rarity" : "Legendary",
+  "description" : "An Apex ship Tier 2, Not for interstellar travel",
+  "shortdescription" : "Apex Ship T3",
+  "race" : "apex",
+
+  "health" : 1000,
+
+  "apexDescription" : "This ship can store lots of cargo, miniknog aproves.",
+  "avianDescription" : "TBA",
+  "floranDescription" : "TBA",
+  "glitchDescription" : "TBA",
+  "humanDescription" : "TBA",
+  "hylotlDescription" : "TBA",
+  "novakidDescription" : "TBA",
+
+  "inventoryIcon" : "shipT0apexicon.png",
+  "orientations" : [
+    {
+      "imageLayers" : [ { "image" : "/ships/apex/apexT3.png:<color>" } ],
+      "renderLayer" : "BackgroundOverlay",
+
+      "imagePosition" : [-424, -80],
+      "frames" : 1,
+      "animationCycle" : 1.0
+	}
+  ]
+}

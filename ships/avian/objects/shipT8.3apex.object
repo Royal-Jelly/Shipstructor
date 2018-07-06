@@ -1,0 +1,32 @@
+{
+
+  "objectName" : "shipT8.3avian",
+  "colonyTags" : ["Avian"],
+  "printable" : false,
+  "rarity" : "Legendary",
+  "description" : "An Avian ship Tier 8.3, Not for interstellar travel",
+  "shortdescription" : "Avian Ship T8.3",
+  "race" : "avian",
+
+  "health" : 1000,
+
+  "apexDescription" : "This ship can store lots of cargo, miniknog aproves.",
+  "avianDescription" : "TBA",
+  "floranDescription" : "TBA",
+  "glitchDescription" : "TBA",
+  "humanDescription" : "TBA",
+  "hylotlDescription" : "TBA",
+  "novakidDescription" : "TBA",
+
+  "inventoryIcon" : "shipT0avianicon.png",
+  "orientations" : [
+    {
+      "imageLayers" : [ { "image" : "/ships/avian/avianT8.png:default.2" } ],
+      "renderLayer" : "BackgroundOverlay",
+
+      "imagePosition" : [-161, -77],
+      "frames" : 1,
+      "animationCycle" : 1.0
+	}
+  ]
+}
