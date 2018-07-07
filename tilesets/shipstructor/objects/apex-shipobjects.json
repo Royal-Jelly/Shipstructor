@@ -1,0 +1,23 @@
+{
+	"margin" : 0,
+	"name" : "apex-shipobjects",
+	"properties" : {
+	},
+	"spacing" : 0,
+	"tilecount" : 1,
+    "tileheight":170,
+    "tilewidth":534,
+	"tileproperties" : {
+		"0" : {
+			"//description" : "Residential Shaft Background.",
+			"//name" : "stationbackgroundresshaft",
+			"//shortdescription" : "Apex Ship T3",
+			"imagePositionX" : "-424",
+			"imagePositionY" : "-80",
+			"object" : "shipT3apex"
+		}
+	},
+	"tiles" : {
+		"0" : {"image" : "./../../../../tiled/shipstructor/objects/apexT3.png"}
+	}
+}

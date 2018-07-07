@@ -1,0 +1,81 @@
+{
+  "margin" : 0,
+  "name" : "shipstructor-materials",
+  "properties" : {
+  },
+  "spacing" : 0,
+  "tilecount" : 11,
+  "tileheight" : 8,
+  "tileproperties" : {
+    "0" : {
+      "material" : "apexhullplate"
+    },
+    "1" : {
+      "material" : "avianhullplate"
+    },
+    "2" : {
+      "material" : "floranhullplate"
+    },
+    "3" : {
+      "material" : "glitchhullplate"
+    },
+    "4" : {
+      "material" : "humanhullplate"
+    },
+    "5" : {
+      "material" : "hylotlhullplate"
+    },
+    "6" : {
+      "material" : "novakidhullplate"
+    },
+    "7" : {
+      "material" : "shipdoorframe"
+    },
+    "8" : {
+      "material" : "shiphatchframe"
+    },
+    "9" : {
+      "material" : "shipwindow"
+    },
+    "10" : {
+      "material" : "shiphullbarrier"
+    }
+
+  },
+  "tiles" : {
+    "0" : {
+      "image" : "./../../../../tiled/packed/materials/supermatter.png"
+    },
+    "1" : {
+      "image" : "./../../../../tiled/packed/materials/supermatter.png"
+    },
+    "2" : {
+      "image" : "./../../../../tiled/packed/materials/supermatter.png"
+    },
+    "3" : {
+      "image" : "./../../../../tiled/packed/materials/supermatter.png"
+    },
+    "4" : {
+      "image" : "./../../../../tiled/packed/materials/supermatter.png"
+    },
+    "5" : {
+      "image" : "./../../../../tiled/packed/materials/supermatter.png"
+    },
+    "6" : {
+      "image" : "./../../../../tiled/packed/materials/supermatter.png"
+    },
+    "7" : {
+      "image" : "./../../../../tiled/shipstructor/materials/shipdoorframe.png"
+    },
+    "8" : {
+      "image" : "./../../../../tiled/shipstructor/materials/shiphatchframe.png"
+    },
+    "9" : {
+      "image" : "./../../../../tiled/shipstructor/materials/shipwindow.png"
+    },
+    "10" : {
+      "image" : "./../../../../tiled/shipstructor/materials/shiphullbarrier.png"
+    }
+  },
+  "tilewidth" : 8
+}
