@@ -1,0 +1,27 @@
+{
+	"margin" : 0,
+	"name" : "generic-shipobjects",
+	"properties" : {
+	},
+	"spacing" : 0,
+	"tilecount" : 2,
+    "tileheight":8,
+    "tilewidth":16,
+	"tileproperties" : {
+		"0" : {
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "apexshiplight"
+		},
+		"1" : {
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "apexshiplightBroken"
+		}
+	},
+	"tiles" : {
+		"0" : {"image" : "../../../../../tiled/packed/objects/apexshiplight.png"},
+		"1" : {"image" : "../../../../../tiled/packed/objects/apexshiplightBroken.png"}
+      
+	}
+}
