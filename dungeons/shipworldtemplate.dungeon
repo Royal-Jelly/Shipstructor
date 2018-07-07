@@ -1,0 +1,25 @@
+{
+  "metadata" : {
+    "name" : "shipworldtemplate",
+    "species" : "generic",
+    "rules" : [ ],
+
+    "anchor" : [ "shipworldtemplate" ],
+
+    "gravity" : 80,
+    "maxRadius" : 500,
+    "maxParts" : 1,
+    "protected" : false
+  },
+
+  "parts" : [
+    {
+      "name" : "shipworldtemplate",
+      "rules" : [
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "shipworldtemplate.json" ]
+    }
+  ]
+}
+  

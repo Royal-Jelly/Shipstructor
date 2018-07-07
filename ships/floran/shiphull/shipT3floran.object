@@ -42,6 +42,5 @@
   ],
   "maxAmountGroups" : {
     "ftlDrive" : 1
-  },
-  "byosOnly" : true
+  }
 }

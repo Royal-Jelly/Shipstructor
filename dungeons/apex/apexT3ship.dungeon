@@ -1,0 +1,25 @@
+{
+  "metadata" : {
+    "name" : "apexT3ship",
+    "species" : "generic",
+    "rules" : [ ],
+
+    "anchor" : [ "apexT3ship" ],
+
+    "gravity" : 80,
+    "maxRadius" : 500,
+    "maxParts" : 1,
+    "protected" : false
+  },
+
+  "parts" : [
+    {
+      "name" : "apexT3ship",
+      "rules" : [
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "apexT3ship.json" ]
+    }
+  ]
+}
+  
