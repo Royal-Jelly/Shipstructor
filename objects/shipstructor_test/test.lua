@@ -22,7 +22,7 @@ end
 function output(state)
   storage.state = state
   if state then
-    world.placeDungeon("shipworldtemplate", {524, 1524})
+    world.placeDungeon("apexT3ship", {524, 1524})
     animator.setAnimationState("switchState", "on")
     if not (config.getParameter("alwaysLit")) then object.setLightColor(config.getParameter("lightColor", {0, 0, 0, 0})) end
     object.setSoundEffectEnabled(true)
