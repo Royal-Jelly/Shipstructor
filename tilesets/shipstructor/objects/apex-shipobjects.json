@@ -1,23 +1,90 @@
-{
-	"margin" : 0,
-	"name" : "apex-shipobjects",
-	"properties" : {
-	},
-	"spacing" : 0,
-	"tilecount" : 1,
-    "tileheight":170,
-    "tilewidth":534,
-	"tileproperties" : {
-		"0" : {
-			"//description" : "Residential Shaft Background.",
-			"//name" : "stationbackgroundresshaft",
-			"//shortdescription" : "Apex Ship T3",
-			"imagePositionX" : "-424",
-			"imagePositionY" : "-80",
-			"object" : "shipT3apex"
-		}
-	},
-	"tiles" : {
-		"0" : {"image" : "../../../../../tiled/shipstructor/objects/apexT3.png"}
-	}
+{ "columns":0,
+ "grid":
+    {
+     "height":170,
+     "orientation":"orthogonal",
+     "width":534
+    },
+ "margin":0,
+ "name":"apex-shipobjects",
+ "spacing":0,
+ "tilecount":8,
+ "tileheight":824,
+ "tileproperties":
+    {
+     "0":
+        {
+         "\/\/description":"Residential Shaft Background.",
+         "\/\/name":"stationbackgroundresshaft",
+         "\/\/shortdescription":"Apex Ship T3",
+         "imagePositionX":"-56",
+         "imagePositionY":"149",
+         "object":"T3apex"
+        }
+    },
+ "tilepropertytypes":
+    {
+     "0":
+        {
+         "\/\/description":"string",
+         "\/\/name":"string",
+         "\/\/shortdescription":"string",
+         "imagePositionX":"string",
+         "imagePositionY":"string",
+         "object":"string"
+        }
+    },
+ "tiles":
+    {
+     "0":
+        {
+         "image":"..\/..\/..\/..\/..\/tiled\/shipstructor\/objects\/apexT3.png",
+         "imageheight":170,
+         "imagewidth":534
+        },
+     "1":
+        {
+         "image":"..\/..\/..\/..\/..\/..\/..\/.steam\/steam\/steamapps\/common\/Starbound\/assets_dev\/_assets\/ships\/apex\/apexT2.png",
+         "imageheight":170,
+         "imagewidth":534
+        },
+     "2":
+        {
+         "image":"..\/..\/..\/..\/..\/..\/..\/.steam\/steam\/steamapps\/common\/Starbound\/assets_dev\/_assets\/ships\/apex\/apexT4.png",
+         "imageheight":280,
+         "imagewidth":936
+        },
+     "3":
+        {
+         "image":"..\/..\/..\/..\/..\/..\/..\/.steam\/steam\/steamapps\/common\/Starbound\/assets_dev\/_assets\/ships\/apex\/apexT1.png",
+         "imageheight":170,
+         "imagewidth":534
+        },
+     "4":
+        {
+         "image":"..\/..\/..\/..\/..\/..\/..\/.steam\/steam\/steamapps\/common\/Starbound\/assets_dev\/_assets\/ships\/apex\/apexT5.png",
+         "imageheight":424,
+         "imagewidth":1000
+        },
+     "5":
+        {
+         "image":"..\/..\/..\/..\/..\/..\/..\/.steam\/steam\/steamapps\/common\/Starbound\/assets_dev\/_assets\/ships\/apex\/apexT6.png",
+         "imageheight":424,
+         "imagewidth":1048
+        },
+     "6":
+        {
+         "image":"..\/..\/..\/..\/..\/..\/..\/.steam\/steam\/steamapps\/common\/Starbound\/assets_dev\/_assets\/ships\/apex\/apexT7.png",
+         "imageheight":648,
+         "imagewidth":1048
+        },
+     "7":
+        {
+         "image":"..\/..\/..\/..\/..\/..\/..\/.steam\/steam\/steamapps\/common\/Starbound\/assets_dev\/_assets\/ships\/apex\/apexT8.png",
+         "imageheight":824,
+         "imagewidth":1168
+        }
+    },
+ "tilewidth":1168,
+ "type":"tileset"
 }

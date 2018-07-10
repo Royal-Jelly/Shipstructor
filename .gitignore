@@ -19,7 +19,7 @@ $RECYCLE.BIN/`
 # Mac crap
 .DS_Store
 *.RENBEAR
-*.bak
+*.json.bak
 *.old
 
 #Directories to be ingored

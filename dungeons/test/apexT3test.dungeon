@@ -1,0 +1,25 @@
+{
+  "metadata" : {
+    "name" : "apexT3test",
+    "species" : "generic",
+    "rules" : [ ],
+
+    "anchor" : [ "apexT3test" ],
+
+    "gravity" : 80,
+    "maxRadius" : 500,
+    "maxParts" : 1,
+    "protected" : false
+  },
+
+  "parts" : [
+    {
+      "name" : "apexT3test",
+      "rules" : [
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "apexT3test.json" ]
+    }
+  ]
+}
+  
